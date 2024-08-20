@@ -9,6 +9,10 @@
 
     <img src="https://i.imgur.com/YvvzKSP.png" alt="Dorna" width ="400"/>
 
+ * 1 x Dorna Gripper Plate Set
+
+    <img src="https://i.imgur.com/lFwcroV.jpeg" alt="Dorna" width ="400"/> 
+
  * 2 x Lab Vial Holder
 
    <img src="https://i.imgur.com/MbY7aJw.jpeg" alt="Dorna" width ="400"/>
@@ -16,8 +20,12 @@
  * Lab Vials
 
    <img src="https://i.imgur.com/iZYnaa3.jpeg" alt="Dorna" width ="400"/>
+
+ * Dorna 2 Finger Pneumatic Gripper
+
+   <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Dorna" width ="400"/>
  
- * 1 x Set of pneumatic gripper fingers
+ * 1 x Set of Pneumatic Gripper Fingers
  
    <img src="https://i.imgur.com/eIwONke.jpeg" alt="Dorna" width ="400"/>
 
@@ -37,9 +45,22 @@
 
    <img src="https://i.imgur.com/QP7P0n8.jpeg" alt="Dorna" width ="400"/>
 
+## **Assembly**
+ * Secure the Dorna Baseplate to your surface.
+ * Mount Dorna TA on the secured Dorna Baseplate using the M5 5mm Screws and the Dorna Baseplate holes located at B1, B3, D1, and D3.
 
+   <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Dorna" width ="400"/>
 
-
+   <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Dorna" width ="400"/>
    
-    
-   
+ * Secure the Dorna Gripper Plate with 4 holes in the center to the Dorna TA tool head using 2 of the M3 8mm Countersink Screws
+
+   <img src="https://i.imgur.com/hokEPMB.jpeg" alt="Dorna" width ="400"/>
+ 
+ * Secure the Dorna Gripper Plate with 2 holes Diagonal from eachother to the Dorna 2 Finger Pneumatic Gripper head using 2 of the M3 8mm Countersink Screws
+
+   <img src="https://i.imgur.com/UR11q7y.jpeg" alt="Dorna" width ="400"/>
+
+* Take the Dorna Gripper Plates attched to the Dorna 2 Finger Pneumatic Gripper and to the Tool Head of Dorna TA. Connect them to each other using 2 x M3 8mm screws and the holes on the sides of the Gripper Plates.
+
+   <img src="https://i.imgur.com/qICma2g.jpeg" alt="Dorna" width ="400"/>
