@@ -29,6 +29,10 @@
  
    <img src="https://i.imgur.com/eIwONke.jpeg" alt="Dorna" width ="400"/>
 
+ * 2 x 400mm Pneumatic Air Hoses
+   
+   <img src="https://i.imgur.com/3jdNbnQ.jpeg" alt="Dorna" width ="400"/>
+
  * 4 x M5 5mm Screws (For Mounting Robot)
 
    <img src="https://i.imgur.com/UWba6IW.jpeg" alt="Dorna" width ="400"/>
@@ -64,3 +68,16 @@
 * Take the Dorna Gripper Plates attched to the Dorna 2 Finger Pneumatic Gripper and to the Tool Head of Dorna TA. Connect them to each other using 2 x M3 8mm screws and the holes on the sides of the Gripper Plates.
 
    <img src="https://i.imgur.com/qICma2g.jpeg" alt="Dorna" width ="400"/>
+
+* Attach the Pneumatic Air Hoses to the Dorna 2 Finger Pneumatic Gripper using the 2 Pneumatic Ports on Dorna TA.
+
+   <img src="https://i.imgur.com/FJ1Ri8V.jpeg" alt="Dorna" width ="400"/>
+
+ * Attach the Lab Vial Holder to the Dorna Base Plate
+
+   <img src="https://i.imgur.com/rmLVyGH.jpeg" alt="Dorna" width ="400"/>
+   <img src="https://i.imgur.com/gDl34yZ.jpeg" alt="Dorna" width ="400"/>
+
+* Your Assembly Is Done!
+  
+   <img src="https://i.imgur.com/9lVQlcO.jpeg" alt="Dorna" width ="400"/>
