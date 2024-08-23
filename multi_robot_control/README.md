@@ -4,7 +4,7 @@
 
  * [Robot Mounting Parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts)
 
- * [Robot Suction Gripper Parts]()
+ * [Robot Suction Gripper Parts](https://github.com/dorna-robotics/education/blob/main/attach_suction_gripper/README.md#parts)
  
  * 3 x Dorna Base Plate Connectors
 
@@ -25,7 +25,7 @@
 ## **Assembly**
 
 * [Mount Dorna TA](https://github.com/dorna-robotics/education/tree/main/mount_robot#assembly) Do this twice (once for both robots).
-* [Attach Suction Gripper]() Do this twice (once for both robots).
+* [Attach Suction Gripper](https://github.com/dorna-robotics/education/blob/main/attach_suction_gripper/README.md#assembly) Do this twice (once for both robots).
 
 * Attach  the two baseplates with robots using the 3 x Dorna Base Plate Connectors. On the short edge furthest from the robot.
 
