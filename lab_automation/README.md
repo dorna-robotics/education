@@ -50,12 +50,8 @@
    <img src="https://i.imgur.com/QP7P0n8.jpeg" alt="Dorna" width ="400"/>
 
 ## **Assembly**
- * Secure the Dorna Baseplate to your surface.
- * Mount Dorna TA on the secured Dorna Baseplate using the M5 5mm Screws and the Dorna Baseplate holes located at B1, B3, D1, and D3.
 
-   <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Dorna" width ="400"/>
-
-   <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Dorna" width ="400"/>
+ * [Mount the robot.](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly)
    
  * Secure the Dorna Gripper Plate with 4 holes in the center to the Dorna TA tool head using 2 of the M3 8mm Countersink Screws
 
