@@ -1,7 +1,7 @@
 # **Lab Automation**
 
 ## **Parts**
-[Robot Mounting Part](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
+ * [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
 
  * 1 x Dorna Gripper Plate Set
 
