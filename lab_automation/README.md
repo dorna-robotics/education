@@ -1,13 +1,7 @@
 # **Lab Automation**
 
 ## **Parts**
- * 1 x Dorna Base Plate
-   
-   <img src="https://i.imgur.com/emNnOZ8.jpeg" alt="Dorna Base Plate" width="400"/>
-
- * 1 x Dorna TA Robotic Arm
-
-    <img src="https://i.imgur.com/YvvzKSP.png" alt="Dorna" width ="400"/>
+[Robot Mounting Part](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
 
  * 1 x Dorna Gripper Plate Set
 
