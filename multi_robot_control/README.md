@@ -1,17 +1,14 @@
 # **Tic-Tac-Toe Automation**
 
 ## **Parts**
- * 2 x Dorna Base Plate
-   
-   <img src="https://i.imgur.com/emNnOZ8.jpeg" alt="Dorna" width="400"/>
+
+ * [Robot Mounting Parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts)
+
+ * [Robot Suction Gripper Parts]()
  
  * 3 x Dorna Base Plate Connectors
 
    <img src="https://i.imgur.com/JqOHVjT.jpeg" alt="Dorna" width ="400"/>
-
- * 1 x Dorna TA Robotic Arm
-
-    <img src="https://i.imgur.com/YvvzKSP.png" alt="Dorna" width ="400"/>
 
  * 10 x Tic-Tac-Toe Game Pieces
 
@@ -24,3 +21,16 @@
  * 2 x Tic-Tac-Toe Game Piece Holder
  
    <img src="https://i.imgur.com/oWKwEAH.jpeg" alt="Dorna" width ="400"/>
+
+## **Assembly**
+
+* [Mount Dorna TA](https://github.com/dorna-robotics/education/tree/main/mount_robot#assembly) Do this twice (once for both robots).
+* [Attach Suction Gripper]() Do this twice (once for both robots).
+
+* Attach  the two baseplates with robots using the 3 x Dorna Base Plate Connectors. On the short edge furthest from the robot.
+
+* Attach the Tic-Tac-Toe Game Board using the hole located at C9 on both plates.
+
+* Attach the Tic-Tac-Toe Game Piece Holder using the holes at B3 and D3.
+
+* The assembly is finished.
