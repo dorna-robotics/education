@@ -3,7 +3,7 @@
 ## **Parts**
  * [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
 
- * [Gripper Mounting Parts](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_gripper/README.md#parts)
+ * [Gripper Mounting Parts](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_pneumatic_gripper/README.md#parts)
 
  * 2 x Lab Vial Holder
 
@@ -23,7 +23,7 @@
 
  * [Mount the robot.](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly)
    
- * [Mount the Gripper.](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_gripper/README.md#assembly)
+ * [Mount the Gripper.](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_pneumatic_gripper/README.md#assembly)
 
  * Attach the Pneumatic Gripper Fingers to the Dorna 2 Finger Gripper using 4 of the [M3 8mm Screws](https://www.mcmaster.com/91290A113/).
 
