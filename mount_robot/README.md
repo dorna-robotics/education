@@ -9,6 +9,8 @@
 
     <img src="https://i.imgur.com/YvvzKSP.png" alt="Dorna" width ="400"/>
 
+* [4 x M5 6mm Screws](https://www.mcmaster.com/90128A228/)
+
  ## **Assembly**
   * Secure the Dorna Baseplate to your surface.
  * Mount Dorna TA on the secured Dorna Baseplate using the M5 5mm Screws and the Dorna Baseplate holes located at B1, B3, D1, and D3.
