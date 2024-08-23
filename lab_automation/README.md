@@ -31,8 +31,8 @@
 
  * Attach the Lab Vial Holders to the Dorna Base Plate to the holes in position (A8, B9 and D8, E9)
 
-   <img src="https://i.imgur.com/rmLVyGH.jpeg" alt="Dorna" width ="400"/>
-   <img src="https://i.imgur.com/gDl34yZ.jpeg" alt="Dorna" width ="400"/>
+   <img src="https://i.imgur.com/rmLVyGH.jpeg" alt="Dorna" Height ="300" Width="400"/>
+   <img src="https://i.imgur.com/gDl34yZ.jpeg" alt="Dorna" Height ="300" Width="400"/>
 
 * Your Assembly Is Done!
   
