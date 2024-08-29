@@ -19,9 +19,9 @@
 
  * [Mount the robot.](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly)
    
- * [Mount the Gripper.](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly)
+ * [Attach the Suction Gripper.](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly)
 
- * Attach the Lab Vial Holders to the Dorna Chip Holder/Board to the holes in position (A7, C7, and E7) using 3 x 8mm x M3 screws.
+ * Attach the the Dorna Chip Holder/Board to the holes in position (A7, C7, and E7) using 3 x 8mm x M3 screws.
 
    <img src="img_here" alt="Dorna" Height ="300" Width="400"/>
    <img src="img_link_here" alt="Dorna" Height ="300" Width="400"/>
