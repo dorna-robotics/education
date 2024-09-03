@@ -37,3 +37,8 @@
 * Your Assembly Is Done!
   
    <img src="https://i.imgur.com/9lVQlcO.jpeg" alt="Dorna" width ="400"/>
+
+## **Code**
+To run the code you will need to use the .ipynb file in this folder. This section is where you will find an explanation of how the code works.
+
+ 1. The first thing we need to determine
