@@ -41,4 +41,7 @@
 ## **Code**
 To run the code you will need to use the .ipynb file in this folder. This section is where you will find an explanation of how the code works.
 
- 1. The first thing we need to determine
+ 1. The first thing we need to determine the positions of all of the Lab Vial Holder Cells Relative to the Robot. To do this, we will messure the distances between A1 and D1, as well as the distance between A1 and A6. Using these distances we will calculate the position of all of the cells.
+ 2. The next thing we will do is prompt and gather input from the user for what holder cell they want to pick the vial from and what cell they want to place it in.
+ 3. We will then check to make sure these inputs are valid, following this we will covert these postions to cartesian coordinates for the robot to use.
+ 4. Finally, we use the Dorna Pick and Place function to complete the motion.
