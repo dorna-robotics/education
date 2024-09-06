@@ -6,8 +6,7 @@ This guide provides step-by-step instructions for connecting the two-finger pneu
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
-| 1 x Gripper plate set | <img src="https://i.imgur.com/lFwcroV.jpeg" alt="Gripper Plate Set" width="100"/> |
-| [1 x Two-finger pneumatic gripper](https://dorna.ai/grippers/pneumatic-gripper-kit/) | <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Pneumatic Gripper" width="100"/> |
+| [1 x Two-finger pneumatic gripper kit](https://dorna.ai/grippers/pneumatic-gripper-kit/) | <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Pneumatic Gripper" width="100"/> |
 | 2 x 4mm x 400mm pneumatic tubing | <img src="https://i.imgur.com/3jdNbnQ.jpeg" alt="Pneumatic Tubing" width="100"/> |
 | [4 x M3 8mm flat head screws](https://www.mcmaster.com/91294A128/) |   |
 | [2 x M4 8mm countersink screws](https://www.mcmaster.com/91294A188/) |   |
