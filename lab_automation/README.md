@@ -35,7 +35,7 @@ In this project, the robot will transfer a lab vial from one holder to another.
    <img src="https://i.imgur.com/9lVQlcO.jpeg" alt="Completed Assembly" width="400"/>
 
 ## **Code**
-To run the code, use the .ipynb file in this folder. This section explains how the code works:
+To run the code, use the [.ipynb file](https://github.com/dorna-robotics/education/blob/main/lab_automation/lab_vial.ipynb) in this folder. This section explains how the code works:
 
 1. The code first determines the positions of all lab vial holder cells relative to the robot. It measures the distances between A1 and D1, as well as A1 and A6. Use these measurements to calculate the positions of all cells.
 
