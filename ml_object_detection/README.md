@@ -34,6 +34,8 @@ In this project, you'll use the Dorna TA robotic arm and 3d vision system to det
    <img src="img_here" alt="Completed Assembly" width="400"/>
 
 ## **Code**
+To run the code, use the [.ipynb file](https://github.com/dorna-robotics/education/blob/main/ml_object_detection/number_sorting.ipynb) in this folder. This section explains how the code works:
+
 1. The robot retrieves the position of the object (via the camera) and its associated class (the object's number).
 
 2. The robot then calculates the appropriate placement location based on the object's number.
