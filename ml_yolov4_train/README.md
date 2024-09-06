@@ -32,6 +32,7 @@ Before starting, ensure your Colab environment is set to use GPU for faster trai
      - Choose **YOLO Darknet**, check **Show download code**, then click **Continue**.
 
 4. **Running the Colab Notebook**
+5. - Run this [code](https://github.com/dorna-robotics/education/blob/main/ml_yolov4_train/ml_yolo4_train.ipynb).
    - Replace the placeholder Roboflow download code in the first cell with your own code, which should look like this:
      ```python
      !pip install roboflow
