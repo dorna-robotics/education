@@ -1,21 +1,13 @@
 # **Attach Two Finger Gripper**
 
 ## **Parts**
-* 1 x Dorna Gripper Plate Set
-
-  <img src="https://i.imgur.com/lFwcroV.jpeg" alt="Dorna" width ="400"/>
-
-* Dorna 2 Finger Pneumatic Gripper
-
-  <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Dorna" width ="400"/>
-
-* 2 x 4mm x 400mm Pneumatic Tubing
-
-  <img src="https://i.imgur.com/3jdNbnQ.jpeg" alt="Dorna" width ="400"/>
-
-* [4 x M3 8mm Flat Head Screws](https://www.mcmaster.com/91294A128/)
-
-* [2 x M4 8mm Countesink Screws](https://www.mcmaster.com/91294A188/)
+| **Part** | **Description/Image** |
+|---|---|
+| 1 x Dorna Gripper Plate Set | <img src="https://i.imgur.com/lFwcroV.jpeg" alt="Dorna Gripper Plate Set" width="100"/> |
+| Dorna 2 Finger Pneumatic Gripper | <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Dorna Pneumatic Gripper" width="100"/> |
+| 2 x 4mm x 400mm Pneumatic Tubing | <img src="https://i.imgur.com/3jdNbnQ.jpeg" alt="Pneumatic Tubing" width="100"/> |
+| [4 x M3 8mm Flat Head Screws](https://www.mcmaster.com/91294A128/) |   |
+| [2 x M4 8mm Countersink Screws](https://www.mcmaster.com/91294A188/) |   |
 
 ## **Assembly**
 * Secure the Dorna Gripper Plate with 4 holes in the center to the Dorna TA tool head using 2 of the [M3 8mm](https://www.mcmaster.com/91294A128/) Flat Head Screws.
