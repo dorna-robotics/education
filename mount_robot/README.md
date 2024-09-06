@@ -12,6 +12,8 @@ In this guide, we will walk you through the steps required to securely mount the
 
  ## **Assembly**
   **1.** Secure the Dorna Baseplate to your surface.
+  <br/> 
+  <br/> 
   **2.** Using the 4 x M5 6mm screws, secure the robotic arm to the baseplate through the holes located at          positions B1, B3, D1, and D3 on the baseplate.
        <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Dorna" width ="400"/>
        <br/> 
