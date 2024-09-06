@@ -5,9 +5,9 @@
 |---|---|
 | [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |  - |
 | [Gripper Mounting Parts](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_pneumatic_gripper/README.md#parts) |  - |
-| 2 x Lab Vial Holder | <img src="https://i.imgur.com/MbY7aJw.jpeg" alt="Lab Vial Holder" width="100"/> |
-| Lab Vials | <img src="https://i.imgur.com/iZYnaa3.jpeg" alt="Lab Vials" width="100"/> |
-| 1 x Set of Pneumatic Gripper Fingers | <img src="https://i.imgur.com/eIwONke.jpeg" alt="Pneumatic Gripper Fingers" width="100"/> |
+| [2 x Lab Vial Holder](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Vial%20Holder%20v10.stl) | <img src="https://i.imgur.com/MbY7aJw.jpeg" alt="Lab Vial Holder" width="100"/> |
+| [Lab Vials](https://www.amazon.com/dp/B0C8CVQK46?ref=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&ref_=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&social_share=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&skipTwisterOG=2&th=1) | <img src="https://i.imgur.com/iZYnaa3.jpeg" alt="Lab Vials" width="100"/> |
+| [1 x Set of Pneumatic Gripper Fingers](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Gripper%20Finger%20v27.stl) | <img src="https://i.imgur.com/eIwONke.jpeg" alt="Pneumatic Gripper Fingers" width="100"/> |
 | [8 x M3 8mm Screws](https://www.mcmaster.com/91290A113/) |  - |
 
 ## **Assembly**
