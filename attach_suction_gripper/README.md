@@ -1,7 +1,7 @@
 # **Attach Suction Gripper**
 
 ## **Overview**
-The goal of this section is to give instructions for installing the Dorna Suction Gripper on the Dorna TA robotics arm.
+The goal of this section is to give instructions for installing the Dorna Suction Gripper on the Dorna TA robotic arm.
 
 ## **Parts**
 
