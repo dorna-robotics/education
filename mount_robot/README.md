@@ -1,7 +1,7 @@
 # **Mounting Robot**
 
 ## **Overview**
-This guide provides step-by-step instructions for securely mounting the Dorna TA Robotic Arm.
+This guide provides step-by-step instructions for securely mounting the Dorna TA robotic arm.
 
 ## **Parts**
 | **Part** | **Description/Image** |
