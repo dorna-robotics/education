@@ -1,5 +1,8 @@
 # **Chip Sorting**
 
+## **Overview**
+In this project, you'll use the Dorna TA robotic arm and Dorna 3D Vision system to detect numbered chips within a defined area and sort them according to their numbers.
+
 ## **Parts**
  * [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
 
