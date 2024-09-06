@@ -1,30 +1,31 @@
-# **Attach Two Finger Gripper**
+# **Attaching the Two-Finger Gripper to the Dorna TA Robotic Arm**
 
 ## **Overview**
-The goal of this section is to give instructions for installing the Dorna Two Finger Pneumatic Gripper on the Dorna TA robotic arm.
+This guide provides step-by-step instructions for connecting the two-finger pneumatic gripper to the Dorna TA robotic arm.
 
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
-| 1 x Dorna Gripper Plate Set | <img src="https://i.imgur.com/lFwcroV.jpeg" alt="Dorna Gripper Plate Set" width="100"/> |
-| Dorna 2 Finger Pneumatic Gripper | <img src="https://i.imgur.com/vGjVK9Y.jpeg" alt="Dorna Pneumatic Gripper" width="100"/> |
-| 2 x 4mm x 400mm Pneumatic Tubing | <img src="https://i.imgur.com/3jdNbnQ.jpeg" alt="Pneumatic Tubing" width="100"/> |
+| 1 x Gripper Plate Set | ![Gripper Plate Set](https://i.imgur.com/lFwcroV.jpeg) |
+| [Two-Finger Pneumatic Gripper](https://dorna.ai/grippers/pneumatic-gripper-kit/) | ![Pneumatic Gripper](https://i.imgur.com/vGjVK9Y.jpeg) |
+| 2 x 4mm x 400mm Pneumatic Tubing | ![Pneumatic Tubing](https://i.imgur.com/3jdNbnQ.jpeg) |
 | [4 x M3 8mm Flat Head Screws](https://www.mcmaster.com/91294A128/) |   |
 | [2 x M4 8mm Countersink Screws](https://www.mcmaster.com/91294A188/) |   |
 
-## **Assembly**
-* Secure the Dorna Gripper Plate with 4 holes in the center to the Dorna TA tool head using 2 of the [M3 8mm](https://www.mcmaster.com/91294A128/) Flat Head Screws.
+## **Assembly Instructions**
 
-   <img src="https://i.imgur.com/hokEPMB.jpeg" alt="Dorna" width ="400"/>
+1. **Mount the Gripper Plate to the Tool Head**  
+   Secure the Gripper Plate (with 4 central holes) to the Dorna TA tool head using 2 M3 8mm flat head screws.  
+   ![Gripper Plate Mounted](https://i.imgur.com/hokEPMB.jpeg)
 
-* Secure the Dorna Gripper Plate with 2 holes Diagonal from eachother to the Dorna 2 Finger Pneumatic Gripper head using 2 of the [M4 8mm](https://www.mcmaster.com/91294A188/) screws.
+2. **Attach the Gripper to the Gripper Plate**  
+   Fasten the Two-Finger Pneumatic Gripper to the Gripper Plate using 2 M4 8mm countersink screws. Use the 2 diagonal holes for this connection.  
+   ![Gripper Attached](https://i.imgur.com/UR11q7y.jpeg)
 
-   <img src="https://i.imgur.com/UR11q7y.jpeg" alt="Dorna" width ="400"/>
+3. **Secure the Gripper Plates Together**  
+   Connect the Gripper Plates (attached to the gripper and the tool head) using 2 M3 8mm screws in the side holes of the plates.  
+   ![Plates Secured](https://i.imgur.com/qICma2g.jpeg)
 
-* Take the Dorna Gripper Plates attched to the Dorna 2 Finger Pneumatic Gripper and to the Tool Head of Dorna TA. Connect them to each other using 2 of the [M3 8mm](https://www.mcmaster.com/91294A128/) screws and the holes on the sides of the Gripper Plates.
-
-   <img src="https://i.imgur.com/qICma2g.jpeg" alt="Dorna" width ="400"/>
-
-* Attach the Pneumatic Air Hoses to the Dorna 2 Finger Pneumatic Gripper using the 2 Pneumatic Ports on Dorna TA.
-
-   <img src="https://i.imgur.com/FJ1Ri8V.jpeg" alt="Dorna" width ="400"/>
+4. **Connect the Pneumatic Tubing**  
+   Attach the pneumatic air hoses to the gripper using the pneumatic ports on the Dorna TA.  
+   ![Pneumatic Tubing Connected](https://i.imgur.com/FJ1Ri8V.jpeg)
