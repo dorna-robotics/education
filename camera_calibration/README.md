@@ -1,7 +1,7 @@
 # **Camera Calibration**
 
 ## **Overview**
-The goal of this document is to desicribe the camera calibration process for the Dorna TA robotic arm and Dorna 3D Vision.
+The purpose of this document is to describe the camera calibration process for the Dorna TA Robotic Arm and Dorna 3D Vision system.
 
 ## **Parts**
 
