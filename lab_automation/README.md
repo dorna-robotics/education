@@ -1,5 +1,8 @@
 # **Lab Automation**
 
+## **Overview**
+In this project, the robot will transfer a lab vial from one holder to another.
+
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
@@ -19,7 +22,7 @@
    Follow the [gripper mounting instructions](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_pneumatic_gripper/README.md#assembly).
 
 3. **Attach the pneumatic gripper fingers**  
-   Secure the pneumatic gripper fingers to the two-finger gripper using 4 M3 8mm screws.  
+   Secure the gripper fingers to the gripper using 4 M3 8mm screws.  
    <img src="https://i.imgur.com/qICma2g.jpeg" alt="Pneumatic Gripper Fingers Attached" width="400"/>
 
 4. **Attach the lab vial holders**  
