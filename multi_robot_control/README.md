@@ -1,5 +1,8 @@
 # **Tic-Tac-Toe Automation**
 
+## **Overview**
+In this project, you'll use two Dorna TA robots that communicate with each other to play a game of Tic-Tac-Toe.
+
 ## **Parts**
 
  * [Robot Mounting Parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts)
