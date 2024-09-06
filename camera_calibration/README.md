@@ -8,6 +8,6 @@ This guide describes the camera calibration process for the Dorna TA robotic arm
 | **Part** | **Description/Image** |
 |---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts) |   |
-| Dorna ArUco | <img src="image_link.jpeg" alt="Dorna ArUco" width="400"/> |
+| Dorna ArUco | <img src="image_link.jpeg" alt="Dorna ArUco" width="100"/> |
 
 ## **Assembly instructions**
