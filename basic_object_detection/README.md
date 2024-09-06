@@ -1,38 +1,33 @@
 # **Chip Sorting**
 
 ## **Overview**
-In this project, you'll use the Dorna TA robotic arm and Dorna 3D Vision system to detect chips within a defined area and place them into defined spots.
+This guide provides step-by-step instructions for using the Dorna TA robotic arm and the basic 3d vision system to detect chips and place them into designated spots.
 
 ## **Parts**
- * [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
+| **Part** | **Description/Image** |
+|---|---|
+| [Robot mounting parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |   |
+| [Suction gripper mounting parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts) |   |
+| 1 x Chip holder/board | <img src="img_here" alt="Chip Holder/Board" width="100"/> |
+| 1 x Set of chips | <img src="img_here" alt="Set of Chips" width="100"/> |
+| [3 x M3 8mm screws](https://www.mcmaster.com/91290A113/) |   |
 
- * [Suction Gripper Mounting Parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts)
+## **Assembly instructions**
 
- * 1 x Chip Holder/Board
-
-   <img src="img_here" alt="Dorna" width ="400"/>
-
- * 1 x Set of Chips
-
-   <img src="img_here" alt="Dorna" width ="400"/>
- 
- * [3 x M3 8mm Screws](https://www.mcmaster.com/91290A113/)
-
-## **Assembly**
-
- * [Mount the robot.](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly)
+1. **Mount the robot**  
+   Follow the instructions to mount the robot as described [here](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly).
    
- * [Attach the Suction Gripper.](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly)
+3. **Attach the suction gripper**  
+   Follow the instructions to attach the suction gripper as described [here](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly).  
 
- * Attach the the Dorna Chip Holder/Board to the holes in position (A7, C7, and E7) using 3 x 8mm x M3 screws.
+4. **Attach the chip holder/board**  
+   Secure the chip holder/board to the holes in positions A7, C7, and E7 using 3 M3 8mm screws.  
+   <img src="img_here" alt="Chip Holder/Board Mounted" width="400"/>
 
-   <img src="img_here" alt="Dorna" Height ="300" Width="400"/>
-   <img src="img_link_here" alt="Dorna" Height ="300" Width="400"/>
+5. **Place the chips**  
+   Arrange the chips in the chip holder/board area.  
+   <img src="img_here" alt="Chips Placed" width="400"/>
 
-* Place the chips in the Dorna Chip Board area.
-
-  <img src="img_link_here" alt="Dorna" Height ="300" Width="400"/>
-
-* Your Assembly Is Done!
-  
-   <img src="img_here" alt="Dorna" width ="400"/>
+6. **Complete the assembly**  
+   Your assembly is now complete!  
+   <img src="img_here" alt="Completed Assembly" width="400"/>
