@@ -37,10 +37,10 @@ In this project, the robot will transfer a lab vial from one holder to another.
 ## **Code**
 To run the code, use the .ipynb file in this folder. This section explains how the code works:
 
-1. Determine the positions of all lab vial holder cells relative to the robot. Measure the distances between A1 and D1, as well as A1 and A6. Use these measurements to calculate the positions of all cells.
+1. The code first determines the positions of all lab vial holder cells relative to the robot. It measures the distances between A1 and D1, as well as A1 and A6. Use these measurements to calculate the positions of all cells.
 
-2. Prompt the user to input the holder cell from which they want to pick a vial and the cell where they want to place it.
+2. The user is then prompted to input the holder cell from which they want to pick a vial and the cell where they want to place it.
 
-3. Validate the inputs and convert the positions to Cartesian coordinates for the robot to use.
-
-4. Use the Dorna pick and place function to complete the motion.
+3. Next, it validates the inputs and converts the positions to Cartesian coordinates for the robot to use.
+   
+5. Finally, it uses the Dorna pick and place function to complete the motion.
