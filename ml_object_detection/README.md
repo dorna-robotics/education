@@ -32,3 +32,14 @@ In this project, you'll use the Dorna TA robotic arm and 3d vision system to det
 5. **Complete the assembly**  
    Your assembly is complete!  
    <img src="img_here" alt="Completed Assembly" width="400"/>
+
+## **Code**
+1. The robot retrieves the position of the object (via the camera) and its associated class (the object's number).
+
+2. The robot then calculates the appropriate placement location based on the object's number.
+
+3. A pick-and-place operation is executed, where the robot picks the object, moves to the middle position, and finally places the object in its designated location.
+
+4. After placing, the robot returns to the imaging position to detect the next object.
+
+5. This loop runs for a predefined number of objects (in this case, 5), performing the sorting task for each detected item.
