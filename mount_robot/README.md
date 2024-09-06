@@ -1,5 +1,8 @@
 # **Mounting Robot**
 
+## **Overview**
+In this guide, we will walk you through the steps required to securely mount the Dorna TA Robotic Arm. 
+
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
@@ -8,11 +11,8 @@
 | [4 x M5 6mm Screws](https://www.mcmaster.com/90128A228/) |   |
 
  ## **Assembly**
-  * Secure the Dorna Baseplate to your surface.
- * Mount Dorna TA on the secured Dorna Baseplate using the M5 5mm Screws and the Dorna Baseplate holes located at B1, B3, D1, and D3.
-
-
-   <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Dorna" Height ="400"/>
-
-
-   <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Dorna" Height ="400"/>
+  **1.** Secure the Dorna Baseplate to your surface.
+  **2.** Using the 4 x M5 6mm screws, secure the robotic arm to the baseplate through the holes located at          positions B1, B3, D1, and D3 on the baseplate.
+       <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Dorna" width ="400"/>
+       <br/> 
+       <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Dorna" width ="400"/>
