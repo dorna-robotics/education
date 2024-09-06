@@ -1,38 +1,34 @@
 # **Number Sorting**
 
 ## **Overview**
-In this project, you'll use the Dorna TA robotic arm and Dorna 3D Vision system to detect numbered chips within a defined area and sort them according to their numbers.
+In this project, you'll use the Dorna TA robotic arm and 3d vision system to detect numbered chips within a defined area and sort them according to their numbers.
 
 ## **Parts**
- * [Robot Mounting Parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts)
+| **Part** | **Description/Image** |
+|---|---|
+| [Robot mounting parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |   |
+| [Suction gripper mounting parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts) |   |
+| 1 x Chip holder/board | <img src="img_here" alt="Chip Holder/Board" width="100"/> |
+| 1 x Set of numbered chips | <img src="img_here" alt="Numbered Chips" width="100"/> |
+| [3 x M3 8mm screws](https://www.mcmaster.com/91290A113/) |   |
 
- * [Suction Gripper Mounting Parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts)
+## **Assembly instructions**
 
- * 1 x Chip Holder/Board
+1. **Mount the robot**  
+   Follow the [robot mounting instructions](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly).
 
-   <img src="img_here" alt="Dorna" width ="400"/>
+2. **Attach the suction gripper**  
+   Follow the [suction gripper mounting instructions](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly).
 
- * 1 x Set of numbered Chips
+3. **Attach the chip holder/board**  
+   Secure the chip holder/board to the holes at positions (A7, C7, and E7) using 3 M3 8mm screws.  
+   <img src="img_here" alt="Chip Holder/Board Attached" height="300" width="400"/>  
+   <img src="img_link_here" alt="Chip Holder/Board Attached" height="300" width="400"/>
 
-   <img src="img_here" alt="Dorna" width ="400"/>
- 
- * [3 x M3 8mm Screws](https://www.mcmaster.com/91290A113/)
+4. **Place the numbered chips**  
+   Position the numbered chips in the designated area on the chip holder/board.  
+   <img src="img_link_here" alt="Numbered Chips Placed" height="300" width="400"/>
 
-## **Assembly**
-
- * [Mount the robot.](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#assembly)
-   
- * [Attach the Suction Gripper.](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly)
-
- * Attach the the Dorna Chip Holder/Board to the holes in position (A7, C7, and E7) using 3 x 8mm x M3 screws.
-
-   <img src="img_here" alt="Dorna" Height ="300" Width="400"/>
-   <img src="img_link_here" alt="Dorna" Height ="300" Width="400"/>
-
-* Place the numbered chips in the Dorna Chip Board area.
-
-  <img src="img_link_here" alt="Dorna" Height ="300" Width="400"/>
-
-* Your Assembly Is Done!
-  
-   <img src="img_here" alt="Dorna" width ="400"/>
+5. **Complete the assembly**  
+   Your assembly is complete!  
+   <img src="img_here" alt="Completed Assembly" width="400"/>
