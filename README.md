@@ -40,7 +40,6 @@ This Github is a collection of diffrent educational projects that can be complet
 
 ## Educational Projects
   
-# Model Tutorials
 | **Project** | **Jupyter Notebook** | **Complementary Materials** | **Repository / Paper** |
 |:------------:|:-------------------------------------------------:|:---------------------------:|:----------------------:|
 | Camera Calibration | <a href='https://github.com/dorna-robotics/education/blob/main/camera_calibration/camera_calibration.ipynb' target="_blank"><img alt='Jupyter' src='https://img.shields.io/badge/Notebook-100000?style=flat&logo=Jupyter&logoColor=fff617&labelColor=black&color=fff617'/></a>|  <a href='https://www.youtube.com/@DornaRobotics' target="_blank"><img alt='youtube' src='https://img.shields.io/badge/YouTube-100000?style=flat&logo=youtube&logoColor=fff617&labelColor=000000&color=fff617'/></a> |<a href='https://github.com/dorna-robotics/education/tree/main/camera_calibration' target="_blank"><img alt='github' src='https://img.shields.io/badge/Project-100000?style=flat&logo=github&logoColor=fff617&labelColor=000000&color=fff617'/></a> |
