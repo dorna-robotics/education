@@ -8,11 +8,10 @@ In this project, the robot will transfer a lab vial from one holder to another.
 |---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |   |
 | [Gripper mounting parts](https://github.com/dorna-robotics/education/blob/main/attach_two_finger_pneumatic_gripper/README.md#parts) |   |
-| [2 x Lab vial holders](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Vial%20Holder%20v10.stl) | <img src="https://i.imgur.com/MbY7aJw.jpeg" alt="Lab Vial Holder" width="100"/> |
-| [Lab vials](https://www.amazon.com/dp/B0C8CVQK46?ref=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&ref_=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&social_share=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&skipTwisterOG=2&th=1) | <img src="https://i.imgur.com/iZYnaa3.jpeg" alt="Lab Vials" width="100"/> |
-| [1 x Set of pneumatic gripper fingers](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Gripper%20Finger%20v27.stl) | <img src="https://i.imgur.com/eIwONke.jpeg" alt="Pneumatic Gripper Fingers" width="100"/> |
-| [8 x M3 8mm screws](https://www.mcmaster.com/91290A113/) |   |
-
+| [2 x Lab vial holders](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Vial%20Holder%20v10.stl) | <img src="https://i.imgur.com/cW6lHwy.png" alt="Lab Vial Holder" width="100"/> |
+| [Lab vials](https://www.amazon.com/dp/B0C8CVQK46?ref=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&ref_=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&social_share=cm_sw_r_cp_ud_dp_GB0VGHMMAQMXRGTBVY2K&skipTwisterOG=2&th=1) | <img src="https://i.imgur.com/hJuBTMf.png" alt="Lab Vials" width="100"/> |
+| [1 x Set of pneumatic gripper fingers](https://github.com/dorna-robotics/education/blob/main/lab_automation/Asset/Gripper%20Finger%20v27.stl) | <img src="https://i.imgur.com/ZTtQyyq.png" alt="Pneumatic Gripper Fingers" width="100"/> |
+| [8 x M3 8mm screws](https://www.mcmaster.com/91290A113/) | <img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91290A113_720ffa0a-507b-416c-b5af-22ad90d45eee@4x_638090342177822562.png?ver=ImageNotFound" alt="Pneumatic Gripper Fingers" width="100"/>  | 
 ## **Assembly instructions**
 
 1. **Mount the robot**  
