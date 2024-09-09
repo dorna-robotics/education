@@ -44,4 +44,5 @@ Before starting, ensure your Colab environment is set to use GPU for faster trai
      dataset = version.download("darknet")
      ```
    - Modify the percentage of images used for testing by changing the value in `percentage_test = 10`.
+   - Near the bottom of the first cell you will notice an augmentation dictonary, there you will find detailed descriptions of how to augment (apply variations) to your images in order to make your dataset more comprehensive.
    - Run all cells in the notebook from top to bottom to complete the setup and start the training process.
