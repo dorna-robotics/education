@@ -11,6 +11,8 @@ This guide describes the camera calibration process for the Dorna TA robotic arm
 | Dorna ArUco | <img src="image_link.jpeg" alt="Dorna ArUco" width="100"/> |
 
 ## **Assembly instructions**
+1. Start by completing [these instructions](https://github.com/dorna-robotics/education/blob/main/camera_calibration/Assets/README.md) to print and assemble the ArUco.
+2. Next, mount the Aruco at holes ``xx`` and ``xx``.
 
 ## **Code**
 To run the code, use the [.ipynb file](https://github.com/dorna-robotics/education/blob/main/camera_calibration/camera_calibration.ipynb) in this folder. This section explains how the code works:
