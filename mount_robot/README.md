@@ -6,9 +6,9 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
-| 1 x Dorna base plate | <img src="https://i.imgur.com/emNnOZ8.jpeg" alt="Dorna Base Plate" width="100"/> |
+| 1 x Dorna base plate | <img src="https://i.imgur.com/xEwQUeN.png" alt="Dorna Base Plate" width="100"/> |
 | 1 x Dorna TA robotic arm | <img src="https://i.imgur.com/YvvzKSP.png" alt="Dorna TA Robotic Arm" width="100"/> |
-| [4 x M5 6mm screws](https://www.mcmaster.com/90128A228/) |   |
+| [4 x M5 6mm screws](https://www.mcmaster.com/90128A228/) | <img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128A228_c47b8bc8-fe5e-419f-bc4c-d3d9368f954b@4x_638053414244785907.png?ver=ImageNotFound" alt="Dorna Base Plate" width="100"/>  |
 
 ## **Assembly instructions**
 
