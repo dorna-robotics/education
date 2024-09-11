@@ -21,7 +21,7 @@ This guide provides step-by-step instructions for using the Dorna TA robotic arm
    Follow the instructions to attach the suction gripper as described [here](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly).  
 
 4. **Attach the chip holder/board**  
-   Secure the chip holder/board to the holes in positions A7, C7, and E7 using 3 M3 8mm screws.  
+   Secure the chip holder/board to the holes in positions ``A7``, ``C7``, and ``E7`` using 3 M3 8mm screws.  
    <img src="img_here" alt="Chip Holder/Board Mounted" width="400"/>
 
 5. **Place the chips**  
