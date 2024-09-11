@@ -8,8 +8,8 @@ This guide provides step-by-step instructions for using the Dorna TA robotic arm
 |---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |   |
 | [Suction gripper mounting parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts) |   |
-| [1 x Chip holder/board](https://github.com/dorna-robotics/education/blob/main/basic_object_detection/Assets/GamePieceHolder%20v9.stl) | <img src="https://i.imgur.com/jwiwhX6.png" alt="Chip Holder/Board" width="100"/> |
-| [1 x Set of chips](https://github.com/dorna-robotics/education/blob/main/basic_object_detection/Assets/Chips%20v4.stl) | <img src="https://i.imgur.com/T4xyPR6.png" alt="Set of Chips" width="100"/> |
+| [1 x Chip holder/board](https://github.com/dorna-robotics/education/blob/main/basic_object_detection/Assets/GamePieceHolder%20v9.stl) | <img src="https://i.imgur.com/YC4SMsz.png" alt="Chip Holder/Board" width="100"/> |
+| [1 x Set of chips](https://github.com/dorna-robotics/education/blob/main/basic_object_detection/Assets/Chips%20v4.stl) | <img src="https://i.imgur.com/eWH0BdG.png" alt="Set of Chips" width="120"/> |
 | [3 x M3 8mm screws](https://www.mcmaster.com/91290A113/) | <img src="https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91290A113_720ffa0a-507b-416c-b5af-22ad90d45eee@4x_638090342177822562.png?ver=ImageNotFound" alt="M3 8mm" width="100"/>  |
 
 ## **Assembly instructions**
