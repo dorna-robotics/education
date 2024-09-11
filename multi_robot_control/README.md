@@ -8,7 +8,7 @@ This project involves using two Dorna TA robots that communicate with each other
 |---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts) |   |
 | [Robot suction gripper parts](https://github.com/dorna-robotics/education/blob/main/attach_suction_gripper/README.md#parts) |   |
-| 3 x Base plate connectors | <img src="https://i.imgur.com/C9oyCSH.png" alt="Base Plate Connectors" width="100"/> |
+| 3 x Base plate connectors | <img src="https://i.imgur.com/ApHx3pN.png" alt="Base Plate Connectors" width="100"/> |
 | 10 x Tic-tac-toe game pieces | <img src="https://i.imgur.com/T4xyPR6.png" alt="Game Pieces" width="100"/> |
 | 1 x Tic-tac-toe game board | <img src="https://i.imgur.com/m62KYn3.png" alt="Game Board" width="100"/> |
 | 2 x Tic-tac-toe game piece holders | <img src="https://i.imgur.com/sYPeXa5.png" alt="Game Piece Holders" width="100"/> |
