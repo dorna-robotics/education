@@ -7,9 +7,9 @@ This guide provides step-by-step instructions for connecting the two-finger pneu
 | **Part** | **Description/Image** |
 |---|---|
 | [1 x Two-finger pneumatic gripper kit](https://dorna.ai/grippers/pneumatic-gripper-kit/) | <img src="https://i.imgur.com/P8koYyG.jpeg" alt="Pneumatic Gripper" width="100"/> |
-| 2 x 4mm x 400mm pneumatic tubing | <img src="https://i.imgur.com/JVNYoy4.png" alt="Pneumatic Tubing" width="100"/> |
+| [2 x 4mm x 400mm pneumatic tubing](https://www.mcmaster.com/50315K22/) | <img src="https://i.imgur.com/JVNYoy4.png" alt="Pneumatic Tubing" width="100"/> |
 | [4 x M3 8mm flat head screws](https://www.mcmaster.com/91294A128/) | <img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A128_1da14e44-6dab-42d8-be03-c9e8717c4265@4x_637976737585978637.png?ver=ImageNotFound" alt="Pneumatic Tubing" width="100"/>  |
-| [2 x M4 8mm countersink screws](https://www.mcmaster.com/91294A188/) |  <img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A188_096412fd-fdbb-456f-b2c6-c3cfe753940c@4x_637977153739436750.png?ver=ImageNotFound" alt="Pneumatic Tubing" width="100"/> |
+| [2 x M4 8mm countersink screws](https://www.mcmaster.com/91294A188/) |  <img src="https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91294A188_096412fd-fdbb-456f-b2c6-c3cfe753940c@4x_637977153739436750.png?ver=ImageNotFound" alt="M4 8mm" width="100"/> |
 
 ## **Assembly instructions**
 
