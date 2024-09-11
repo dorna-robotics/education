@@ -17,7 +17,7 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
    <br/>
 
 2. **Mount the robotic arm**  
-   Using the 4 M5 6mm screws, secure the robotic arm to the base plate through the holes located at positions B1, B3, D1, and D3 on the base plate.  
+   Using the 4 M5 6mm screws, secure the robotic arm to the base plate through the holes located at positions ``B1``, ``B3``, ``D1``, and ``D3`` on the base plate.  
    <img src="https://i.imgur.com/t8TeCLP.jpeg" alt="Mounting Holes" width="400"/>  
    <br/>  
    <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Robotic Arm Mounted" width="400"/>
