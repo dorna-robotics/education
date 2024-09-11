@@ -25,7 +25,7 @@ In this project, the robot will transfer a lab vial from one holder to another.
    <img src="https://i.imgur.com/qICma2g.jpeg" alt="Pneumatic Gripper Fingers Attached" width="400"/>
 
 4. **Attach the lab vial holders**  
-   Fix the lab vial holders to the base plate at the positions (A8, B9, D8, E9).  
+   Fix the lab vial holders to the base plate at the positions ``A8``, ``B9``, ``D8``, and ``E9``.  
    <img src="https://i.imgur.com/rmLVyGH.jpeg" alt="Lab Vial Holders Mounted" height="300" width="400"/>  
    <img src="https://i.imgur.com/gDl34yZ.jpeg" alt="Lab Vial Holders Mounted" height="300" width="400"/>
 
@@ -36,7 +36,7 @@ In this project, the robot will transfer a lab vial from one holder to another.
 ## **Code**
 To run the code, use the [.ipynb file](https://github.com/dorna-robotics/education/blob/main/lab_automation/lab_vial.ipynb) in this folder. This section explains how the code works:
 
-1. The code first determines the positions of all lab vial holder cells relative to the robot. It measures the distances between A1 and D1, as well as A1 and A6. Use these measurements to calculate the positions of all cells.
+1. The code first determines the positions of all lab vial holder cells relative to the robot. It measures the distances between ``A1`` and ``D1``, as well as ``A1`` and ``A6``. Use these measurements to calculate the positions of all cells.
 
 2. The user is then prompted to input the holder cell from which they want to pick a vial and the cell where they want to place it.
 
