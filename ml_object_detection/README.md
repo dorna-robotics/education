@@ -21,7 +21,7 @@ In this project, you'll use the Dorna TA robotic arm and 3d vision system to det
    Follow the [suction gripper mounting instructions](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#assembly).
 
 3. **Attach the chip holder/board**  
-   Secure the chip holder/board to the holes at positions (A7, C7, and E7) using 3 M3 8mm screws.  
+   Secure the chip holder/board to the holes at positions ``A7``, ``C7``, and ``E7`` using 3 M3 8mm screws.  
    <img src="img_here" alt="Chip Holder/Board Attached" height="300" width="400"/>  
    <img src="img_link_here" alt="Chip Holder/Board Attached" height="300" width="400"/>
 
