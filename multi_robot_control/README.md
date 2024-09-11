@@ -27,11 +27,11 @@ This project involves using two Dorna TA robots that communicate with each other
    <img src="Dorna_Image" alt="Base Plate Connectors" width="400"/>
 
 5. **Install the tic-tac-toe game board**  
-   Secure the game board to the base plates using the hole located at C9 on both plates.  
+   Secure the game board to the base plates using the hole located at ``C9`` on both plates.  
    <img src="Dorna_Image" alt="Game Board" width="400"/>
 
 6. **Attach the game piece holders**  
-   Mount the game piece holders using the holes at B3 and D3.  
+   Mount the game piece holders using the holes at ``B3`` and ``D3``.  
    <img src="Dorna_Image" alt="Game Piece Holders" width="400"/>
 
 7. **Your assembly is complete!**  
