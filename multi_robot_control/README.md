@@ -15,7 +15,8 @@ In this project the robots need to communicate with eachother to know what space
 
 The I/O ports 1-4 send binary values, which the robots interpret as coordinates on the Tic-Tac-Toe grid. By utilizing a predefined mapping between I/O pin values and board positions, the robots can accurately read the table and make a move based on the game logic. It also uses the pin signal from pin 5 to know when it is safe to make a move. This is done by Robot A setting output pin 5 to equal 1 when it is making a move that action sets input pin 5 on Robot B equal to 1 indicating to Robot B that Robot A is working and it must wait to make a move.
 
-Here’s the table that defines the communication protocol between the robots:
+Here’s the table that defines the communication protocol between the robots:<br>
+*Note that the I/O signals are formated [pin 1, pin 2, pin 3, pin 4]*
 
 | (0, 0) - Top-left<br>[0, 0, 0, 1] | (0, 1) - Top-center<br>[0, 0, 1, 0] | (0, 2) - Top-right<br>[0, 0, 1, 1] |
 |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
