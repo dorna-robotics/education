@@ -16,17 +16,12 @@ In this project the robots need to communicate with eachother to know what space
 The I/O ports 1-4 send binary values, which the robots interpret as coordinates on the Tic-Tac-Toe grid. By utilizing a predefined mapping between I/O pin values and board positions, the robots can accurately read the table and make a move based on the game logic. It also uses the pin signal from pin 5 to know when it is safe to make a move. This is done by Robot A setting output pin 5 to equal 1 when it is making a move that action sets input pin 5 on Robot B equal to 1 indicating to Robot B that Robot A is working and it must wait to make a move.
 
 Here’s the table that defines the communication protocol between the robots:
-| **Board Position**      | **Pin Values [Pin 1, Pin 2, Pin 3, Pin4]** | **Description**                             |
-|:-------------------------|:------------------------------------:|---------------------------------------------|
-| (0, 0) - Top-left       | [0, 0, 0, 1]                      | Robot places piece in the top-left corner. |
-| (0, 1) - Top-center     | [0, 0, 1, 0]                      | Robot places piece in the top-center.       |
-| (0, 2) - Top-right      | [0, 1, 0, 0]                      | Robot places piece in the top-right corner. |
-| (1, 0) - Middle-left    | [0, 0, 1, 1]                      | Robot places piece in the middle-left.      |
-| (1, 1) - Center         | [0, 1, 1, 0]                      | Robot places piece in the center.           |
-| (1, 2) - Middle-right   | [0, 1, 0, 1]                      | Robot places piece in the middle-right.     |
-| (2, 0) - Bottom-left    | [1, 0, 0, 1]                      | Robot places piece in the bottom-left.      |
-| (2, 1) - Bottom-center  | [1, 0, 1, 0]                      | Robot places piece in the bottom-center.    |
-| (2, 2) - Bottom-right   | [1, 1, 0, 0]                      | Robot places piece in the bottom-right.     |
+
+| (0, 0) - Top-left<br>[0, 0, 0, 1] | (0, 1) - Top-center<br>[0, 0, 1, 0] | (0, 2) - Top-right<br>[0, 0, 1, 1] |
+|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
+| **(1, 0) - Middle-left<br>[0, 1, 0, 0]** | **(1, 1) - Center<br>[0, 1, 0, 1]** | **(1, 2) - Middle-right<br>[0, 1, 1, 0]** |
+| **(2, 0) - Bottom-left<br>[0, 1, 1, 1]** | **(2, 1) - Bottom-center<br>[1, 0, 0, 0]** | **(2, 2) - Bottom-right<br>[1, 0, 0, 1]** |
+
 
 ## **Parts**
 | **Part** | **Description/Image** |
