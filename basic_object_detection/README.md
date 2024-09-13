@@ -32,5 +32,7 @@ This guide provides step-by-step instructions for using the Dorna TA robotic arm
    Your assembly is now complete!  
    <img src="img_here" alt="Completed Assembly" width="400"/>
 
+##**Wiring**
+
 ## **Code**
 
