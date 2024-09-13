@@ -1,7 +1,12 @@
 # **Tic-Tac-Toe Automation**
 
 ## **Overview**
-This project involves using two Dorna TA robots that communicate with each other to play a game of Tic-Tac-Toe.
+This project involves using two Dorna TA robots that communicate with each other to play a game of Tic-Tac-Toe. This introduces students to the exciting world of multi-robot automating by creating a game of Tic-Tac-Toe using two Dorna TA robotic arms. Participants will learn how to assemble the robots, configure their communication through I/O pins, and program their movements to autonomously play the game. By integrating robotics, programming, and real-time communication, students will understand how machines can work collaboratively to complete tasks in a structured environment.
+
+Throughout the course, students will write Python scripts to control the robots, handle game logic, and communicate through I/O ports to signal moves and update the game board. The robots will pick and place Tic-Tac-Toe pieces based on board positions, communicating their actions to ensure that both robots know when and where to place pieces. The course emphasizes hands-on learning, enabling students to interact with robots, troubleshoot code, and gain valuable experience in automation.
+
+### **Main Learning Objective: Communication Between Robots**
+The primary learning objective of this project is to develop a reliable communication system between two Dorna TA robots to automate a game of Tic-Tac-Toe. Communication is achieved through the I/O ports on the robots, which transmit signals to indicate game board positions and actions.
 
 ## **Parts**
 | **Part** | **Description/Image** |
