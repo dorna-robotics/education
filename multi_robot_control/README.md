@@ -8,6 +8,25 @@ Throughout the course, students will write Python scripts to control the robots,
 ### **Main Learning Objective: Communication Between Robots**
 The primary learning objective of this project is to develop a reliable communication system between two Dorna TA robots to automate a game of Tic-Tac-Toe. Communication is achieved through the I/O ports on the robots, which transmit signals to indicate game board positions and actions.
 
+
+**How We Achieve Communication**
+In this project the robots need to communicate with eachother to know what spaces are avalible and when it is safe for it to make a move. The robots communicate by sending signals through their I/O ports. These signals represent different positions on the game board and instruct the robots on where to place the game pieces.
+
+The I/O ports 1-4 send binary values, which the robots interpret as coordinates on the Tic-Tac-Toe grid. By utilizing a predefined mapping between I/O pin values and board positions, the robots can accurately read the table and make a move based on the game logic. It also uses the pin signal from pin 5 to know when it is safe to make a move when Robot A is making a move it set's output pin 5 to equal 1 and that sets input pin 5 on Robot B equal to 1.
+
+Here’s the table that defines the communication protocol between the robots:
+| **Board Position**      | **Pin Values [Pin 1, Pin 2, Pin 3, Pin4]** | **Description**                             |
+|:-------------------------|:------------------------------------:|---------------------------------------------|
+| (0, 0) - Top-left       | [0, 0, 0, 1]                      | Robot places piece in the top-left corner. |
+| (0, 1) - Top-center     | [0, 0, 1, 0]                      | Robot places piece in the top-center.       |
+| (0, 2) - Top-right      | [0, 1, 0, 0]                      | Robot places piece in the top-right corner. |
+| (1, 0) - Middle-left    | [0, 0, 1, 1]                      | Robot places piece in the middle-left.      |
+| (1, 1) - Center         | [0, 1, 1, 0]                      | Robot places piece in the center.           |
+| (1, 2) - Middle-right   | [0, 1, 0, 1]                      | Robot places piece in the middle-right.     |
+| (2, 0) - Bottom-left    | [1, 0, 0, 1]                      | Robot places piece in the bottom-left.      |
+| (2, 1) - Bottom-center  | [1, 0, 1, 0]                      | Robot places piece in the bottom-center.    |
+| (2, 2) - Bottom-right   | [1, 1, 0, 0]                      | Robot places piece in the bottom-right.     |
+
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
