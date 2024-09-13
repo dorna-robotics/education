@@ -1,7 +1,18 @@
 # **Lab Automation**
 
 ## **Overview**
-In this project, the robot will transfer a lab vial from one holder to another.
+In this project, the goal is to automate the transfer of a lab vial from one holder to another using a single Dorna TA robotic arm. This project demonstrates how robotics can be employed in laboratory automation to enhance efficiency and accuracy in handling delicate lab equipment. By using the Dorna TA robot, participants will learn about robotic manipulation, programming, and real-time control in a lab environment.
+
+Students will set up the robotic arm to grasp a vial from one holder and accurately place it into another holder. This process involves calibrating the robot, programming its movements, and ensuring precise vial handling to avoid spills or breakages. The project also includes writing Python scripts to control the robot's actions, handling errors, and managing the transfer process seamlessly.
+
+### **Main Learning Objective: Robotic Manipulation and Automation**
+The primary learning objective of this project is to understand and apply robotic manipulation techniques for automating tasks in a real world setting. This involves learning how to program the robot to perform specific tasks, such as picking up and placing vials, and ensuring that these tasks are carried out with high precision. In this project, the Dorna TA robot is used to automate the transfer of vials between holders.
+
+
+**How We Achieve This**
+
+*    Calibration: The robot needs to be calibrated to understand the exact positions of the vial holders and the vials themselves. This ensures accurate placement and retrieval. The script calculates the positions of the vial holders relative to the robot's base. From 3 Positions It measures distances and uses these measurements to determine the exact locations for picking and placing vials.
+*    Movement: Python scripts are written to control the robot's movements. The script calculates the vial holder positions, sends commands to the robot to pick up a vial, move it to the target holder, and release it.
 
 ## **Parts**
 | **Part** | **Description/Image** |
