@@ -54,3 +54,6 @@ To run the code, use the [.ipynb file](https://github.com/dorna-robotics/educati
 3. Next, it validates the inputs and converts the positions to Cartesian coordinates for the robot to use.
    
 5. Finally, it uses the Dorna pick and place function to complete the motion.
+
+## **Wiring Instructions**
+1. [Robot Wiring](https://github.com/dorna-robotics/education/tree/main/mount_robot)
