@@ -8,8 +8,16 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
 |---|---|
 | 1 x Dorna base plate | <img src="https://i.imgur.com/ZKd1nrU.png" alt="Dorna Base Plate" width="100"/> |
 | 1 x Dorna TA robotic arm | <img src="https://i.imgur.com/9ukhF4G.png" alt="Dorna TA Robotic Arm" width="100"/> |
-| [4 x M5 6mm screws](https://www.mcmaster.com/90128A228/) | <img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128A228_c47b8bc8-fe5e-419f-bc4c-d3d9368f954b@4x_638053414244785907.png?ver=ImageNotFound" alt="Dorna Base Plate" width="100"/>  |
-| [Ethernet Splitter](https://a.co/d/cWE83wG) | <img src="https://i.imgur.com/DqInCuU.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [4 x M5 6mm screws](https://www.mcmaster.com/90128A228/) | <img src="https://i.imgur.com/2O6YVzy.png" alt="Screw" width="100"/>  |
+| [1 x Ethernet Splitter](https://a.co/d/cWE83wG) | <img src="https://i.imgur.com/DqInCuU.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [2 x Short Ethernet Cables](https://a.co/d/0XHGOBJ) | <img src="https://i.imgur.com/oqCmktp.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Long Ethernet Cable](https://a.co/d/5KD8N7V) | <img src="https://i.imgur.com/petLfpR.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x USB C Cable](https://a.co/d/gTFuSt4) | <img src="https://i.imgur.com/RFxKchg.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Rapberry Pi Power Supply](https://a.co/d/gO7Qurn) | <img src="https://i.imgur.com/XLKgDS0.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Solenoid Power Supply](https://a.co/d/4ajOn8z) | <img src="https://i.imgur.com/AZu4HcW.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Solenoid Valve](https://a.co/d/a9mEhc8) | <img src="https://i.imgur.com/8OuqORC.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Solenoid I/O Wires](https://a.co/d/6ludXXV) | <img src="https://i.imgur.com/wgGNi4v.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x USB Extension](https://a.co/d/cUxgcDr) | <img src="https://i.imgur.com/88vRQZH.png" alt="Dorna TA Robotic Arm" width="100"/> |
 
 ## **Assembly instructions**
 
@@ -23,37 +31,44 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
    <br/>  
    <img src="https://i.imgur.com/Rm0Asch.jpeg" alt="Robotic Arm Mounted" width="400"/>
 
-##**Wiring**
-1. **Connect the camera**
-   Using a USB 3.0 extension, you will connect the camera to one of the blue USB 3.0 ports on the Raspberry Pi.
+### **Wiring Instructions**
+
+1. **Connect the Camera**  
+   Using a USB 3.0 extension cable, connect the wire coming off the camera on the robot to one of the blue USB 3.0 ports on the Raspberry Pi.
+   <br/>
    <img src="https://i.imgur.com/Wj5R3JU.jpeg" alt="Mounting Holes" width="400"/>  
    <br/>
-   <img src="" alt="RasPI-3d Vision" width="400"/>  
-   <br/>
-2. **Connect to the Internet**
-   The first thing to, is connect 2 short ethernet wires to the ethernet splitter on the control box.
-   <br/>
-   <img src="https://i.imgur.com/BLQb8YI.jpeg" alt="Robotic Arm Mounted" width="400"/>
-   <br/>
-   The next thing to do is connect one of the ethernet cables to the raspberry pi. At the raspberry pi also connect a usb c cable to one of the black USB      2.0 ports.
-   <br/>
-   <img src="https://i.imgur.com/Dnktgms.jpeg" alt="Robotic Arm Mounted" width="400"/>
-   <br/>
-   Now, plug in the USB C cable you just connected to the raspberry pi to the back of the ethernet splitter. While back here connect the long ethernet         cable to the port on the back, this cable should go to your router or any ethernet port with internet. 
-   <br/>
-   <img src="https://i.imgur.com/EiXCErs.jpeg" alt="Robotic Arm Mounted" width="400"/>
-   <br/>
-   Next, connect the other ethernet cable on the front of the splitter to the dorna ta control box.
-   <br/>
-   <img src="https://i.imgur.com/1r7iJcM.jpeg" alt="Robotic Arm Mounted" width="400"/>
-   <br/>
-3. **Powering Solenoid Valve**
-   At the solenoid valve 
-   
-   
-   
 
-   
-   
-   
-   
+3. **Connect to the Internet**  
+   Start by connecting two short Ethernet cables to the Ethernet splitter on the control box.
+   <br/>
+   <img src="https://i.imgur.com/BLQb8YI.jpeg" alt="Ethernet Splitter" width="400"/>  
+   <br/>  
+   Next, connect one of the Ethernet cables to the Raspberry Pi. Also, connect a short USB-C cable to one of the black USB 2.0 ports on the Raspberry Pi.  
+   <br/>
+   <img src="https://i.imgur.com/Dnktgms.jpeg" alt="Raspberry Pi Connection" width="400"/>  
+   <br/>  
+   Then, plug the USB-C cable you just connected to the Raspberry Pi into the back of the Ethernet splitter. While back here, connect a long Ethernet cable to the port on the back of the splitter. This cable should run to your router or any Ethernet port with internet access.
+   <br/>
+   <img src="https://i.imgur.com/EiXCErs.jpeg" alt="Ethernet Connection" width="400"/>  
+   <br/>  
+   Finally, connect the other Ethernet cable at the front of the splitter to the Dorna TA control box.
+   <br/>
+   <img src="https://i.imgur.com/1r7iJcM.jpeg" alt="Dorna TA Control Box" width="400"/>  
+   <br/>
+
+5. **Powering the Solenoid Valve**  
+   Use the solenoid power supply and the female barrel connector attached to the solenoid to power the solenoid valve. Also, connect the red and black solenoid wires to the solenoid: the red wire should go to the "+" terminal, and the black wire should go to the "-" terminal on the ports labeled "control."
+   <br/>
+   <img src="https://i.imgur.com/CuqO4Xr.jpeg" alt="Solenoid Valve" width="400"/>  
+   <br/>  
+   Connect the black wire to the 0 output pin and the red wire to the 24V port on the front of the control box (to the left of the black wire).
+   <br/>
+   <img src="https://i.imgur.com/4vGNW2N.jpeg" alt="Control Box" width="400"/>  
+   <br/>
+
+7. **Powering the Raspberry Pi**  
+   Use the provided USB-C power supply to connect to the USB-C port on the side of the Raspberry Pi to power it.
+   <br/>
+   <img src="https://i.imgur.com/JOv7y6D.jpeg" alt="Control Box" width="400"/>  
+   <br/>
