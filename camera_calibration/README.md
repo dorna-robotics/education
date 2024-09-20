@@ -24,3 +24,6 @@ To run the code, use the [.ipynb file](https://github.com/dorna-robotics/educati
 3. Then this data is used to calculate the transformation matrix that links the camera’s coordinate system to the robot’s joint system.
 
 4. An optimization function is applied to refine this matrix, resulting in an accurate representation of the camera's viewpoint in relation to the robot's joints.
+
+## **Wiring Instructions**
+1. [Robot Wiring](https://github.com/dorna-robotics/education/tree/main/mount_robot)
