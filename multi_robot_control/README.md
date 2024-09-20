@@ -63,4 +63,4 @@ Here’s the table that defines the communication protocol between the robots:<b
 1. [Robot Wiring](https://github.com/dorna-robotics/education/tree/main/mount_robot)
 2. Connect I/O Pins
    <br/>
-   Between the 2 Robots use 14 AWG wire to connect the output pins 1-5 for robot 1 to the corresponding input pins for robot 2 and the output pins 1-5 for robot 2 to the corresponding input pins for robot 1.
+   Between the two robots, use 14 AWG wire to connect the output pins 1-5 of robot 1 to the corresponding input pins of robot 2, and connect the output        pins 1-5 of robot 2 to the corresponding input pins of robot 1.
