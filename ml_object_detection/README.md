@@ -45,3 +45,6 @@ To run the code, use the [.ipynb file](https://github.com/dorna-robotics/educati
 4. After placing, the robot returns to the imaging position to detect the next object.
 
 5. This loop runs for a predefined number of objects (in this case, 5), performing the sorting task for each detected item.
+
+## **Wiring Instructions**
+1. [Robot Wiring](https://github.com/dorna-robotics/education/tree/main/mount_robot)
