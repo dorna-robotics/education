@@ -1,5 +1,7 @@
 ## **YOLOv4 Training**
 
+<a href='https://colab.research.google.com/drive/16OozKrCunzDAf50p3QLWYyivqnQZXBix?usp=sharing' target="_blank"><img alt='Google Colab' src='https://img.shields.io/badge/Colab-100000?style=flat&logo=Google Colab&logoColor=ffa500&labelColor=383838&color=ffa500'/></a>
+
 Before starting, ensure your Colab environment is set to use GPU for faster training. Go to **Runtime** > **Change runtime type** > **Hardware accelerator** and select **GPU**.
 
 ### **Creating Your Dataset**
@@ -8,19 +10,19 @@ Before starting, ensure your Colab environment is set to use GPU for faster trai
    - Identify the objects or defects you want to detect (e.g., cats, dogs, cars, good apple, bad apple). In this example, we use categories **1, 2, 3, 4,** and **5**.
 
 2. **Collect Images**
-   - Capture photos using your camera (e.g., Google Images, mobile phone, or personal camera). Ensure diversity in angles, lighting, and backgrounds. The sample image set can be viewed [here](https://photos.app.goo.gl/FtLV9HDPrkQnURrq7). Adjust conditions and set sizes based on the accuracy you aim to achieve.
+   - Capture photos using your camera (e.g., Google Images, mobile phone, or personal camera). Ensure diversity in angles, lighting, and backgrounds. The sample image set can be viewed [here](https://drive.google.com/drive/folders/1U3uedqbndjVraDxkVg8IPtNmZ3qrNuqY?usp=sharing). Adjust conditions and set sizes based on the accuracy you aim to achieve.
 
 3. **Label the Images**
    - Use a labeling tool like [**Roboflow**](https://roboflow.com/) to label and create your dataset.
      - Sign in or create an account at [Roboflow](https://roboflow.com/).
      - Create a new project by clicking **New Project**.
        ![New Project](https://i.imgur.com/94aYGQf.png)
-     - Select the project type suitable for your application (e.g., object detection).
+     - Select the project type suitable for your application (in our example we use instance segmentation).
      - Upload your images via the **Upload Data** tab.
-       ![Upload Data](https://i.imgur.com/qyF42FP.png)
+       ![Upload Data](https://i.imgur.com/kLLrlkl.png)
      - Use the **Polygon Tool** or **Smart Polygon Tool** under the **Annotation** tab to label objects in each image.
+       ![Generate Dataset](https://i.imgur.com/TeoZQOl.png)
      - After labeling, navigate to the **Generate** tab to create the dataset.
-       ![Generate Dataset](https://i.imgur.com/HjDKyh1.png)
      - In the **Generate** tab:
        - Create a new version using the button in the top left corner.
        - Under **Preprocessing**, select:
