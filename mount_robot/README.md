@@ -68,6 +68,10 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
    <br/>
    <img src="https://i.imgur.com/4vGNW2N.jpeg" alt="Control Box" width="400"/>  
    <br/>
+   Using the P port on the solenoid and run a tube from that port to your air compressor.
+   <br/>
+   <img src="https://i.imgur.com/ygOdjzE.jpeg" alt="Control Box" width="400"/>  
+   <br/>
 
 7. **Powering the Raspberry Pi**  
    Use the provided USB-C power supply to connect to the USB-C port on the side of the Raspberry Pi to power it.
