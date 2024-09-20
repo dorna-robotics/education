@@ -28,10 +28,10 @@ Before starting, ensure your Colab environment is set to use GPU for faster trai
        - Under **Preprocessing**, select:
          - **Auto-Orient**
          - **Resize and stretch to 416x416**
-           ![Preprocessing](https://i.imgur.com/bbZh7xv.png)
+           ![Preprocessing](https://i.imgur.com/cktLYS3.png)
      - Go to the **Versions** tab, select the desired dataset version, and click **Export Dataset**.
-       ![Export Dataset](https://i.imgur.com/xo2zuSF.png)
-     - Choose **YOLO Darknet**, check **Show download code**, then click **Continue**.
+       ![Export Dataset](https://i.imgur.com/fhYPjwT.png)
+     - Choose **YOLO Darknet**, click **Show download code**, then click **Continue**.
 
 4. **Running the Colab Notebook**
 5. - Run this [code](https://github.com/dorna-robotics/education/blob/main/ml_yolov4_train/ml_yolo4_train.ipynb).
