@@ -17,7 +17,9 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
 | [1 x Solenoid Power Supply](https://a.co/d/4ajOn8z) | <img src="https://i.imgur.com/AZu4HcW.png" alt="Dorna TA Robotic Arm" width="100"/> |
 | [1 x Solenoid Valve](https://a.co/d/a9mEhc8) | <img src="https://i.imgur.com/8OuqORC.png" alt="Dorna TA Robotic Arm" width="100"/> |
 | [1 x Solenoid I/O Wires](https://a.co/d/6ludXXV) | <img src="https://i.imgur.com/wgGNi4v.png" alt="Dorna TA Robotic Arm" width="100"/> |
-| [1 x USB Extension](https://a.co/d/cUxgcDr) | <img src="https://i.imgur.com/88vRQZH.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Power Cable](https://a.co/d/902MPWC) | <img src="https://i.imgur.com/cuyqCtN.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x DB25 Cable](https://a.co/d/5uJYNzg) | <img src="https://i.imgur.com/I4UiNsw.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x DB9 Cable](https://a.co/d/fVw5Gf7) | <img src="https://i.imgur.com/XafOb2n.png" alt="Dorna TA Robotic Arm" width="100"/> |
 
 ## **Assembly instructions**
 
@@ -71,4 +73,18 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
    Use the provided USB-C power supply to connect to the USB-C port on the side of the Raspberry Pi to power it.
    <br/>
    <img src="https://i.imgur.com/JOv7y6D.jpeg" alt="Control Box" width="400"/>  
+   <br/>
+
+8. **Connecting Robot**
+   Connect the DB25 and DB9 wires to the back of the robot. Keep in mind that this will lock the motors, so ensure the robot is in a safe position.
+   <br/>
+   <img src="" alt="Control Box" width="400"/>  
+   <br/>
+   Run these wires down to the back of the control box and connect them to their corresponding ports. 
+   <br/>
+   <img src="https://i.imgur.com/vUistgC.jpeg" alt="Control Box" width="400"/>  
+   <br/>
+   Finally, connect a power cable to the back of your control box and outlet. 
+   <br/>
+   <img src="" alt="Control Box" width="400"/>  
    <br/>
