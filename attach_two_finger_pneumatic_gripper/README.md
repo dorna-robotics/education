@@ -28,3 +28,10 @@ This guide provides step-by-step instructions for connecting the two-finger pneu
 4. **Connect the pneumatic tubing**  
    Attach the pneumatic tubes to the gripper using the pneumatic ports on the Dorna TA.  
    <img src="https://i.imgur.com/FJ1Ri8V.jpeg" alt="Pneumatic Tubing Connected" width="400"/>
+
+# **Pneumatic Instructions**
+   Connect the A and B ports on the back of the solenoid to the 0 and 1 ports on the back of the robot.
+   <br/>
+   <img src="" alt="Pneumatic Tubing Connected" width="400"/>
+
+
