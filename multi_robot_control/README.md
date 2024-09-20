@@ -33,7 +33,7 @@ Here’s the table that defines the communication protocol between the robots:<b
 | [10 x Tic-tac-toe game pieces](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/Chips%20v2.stl) | <img src="https://i.imgur.com/eWH0BdG.png" alt="Set of Chips" width="120"/> |
 | [1 x Tic-tac-toe game board](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GameBoard%20v17.stl) | <img src="https://i.imgur.com/ZgE4bXc.png" alt="Game Board" width="100"/> |
 | [2 x Tic-tac-toe game piece holders](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GamePieceHolder%20v12.stl) | <img src="https://i.imgur.com/Zz2rPqp.png" alt="Game Piece Holders" width="100"/> |
-| [1 x Wire](https://a.co/d/hIP1Gwt) | <img src="https://i.imgur.com/Zz2rPqp.png" alt="Game Piece Holders" width="100"/> |
+| [1 x Wire](https://a.co/d/hIP1Gwt) | <img src="https://i.imgur.com/juX3bTV.png" alt="Wire" width="100"/> |
 
 ## **Assembly instructions**
 
