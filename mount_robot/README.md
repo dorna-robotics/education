@@ -6,8 +6,8 @@ This guide provides step-by-step instructions for securely mounting the Dorna TA
 ## **Parts**
 | **Part** | **Description/Image** |
 |---|---|
-| 1 x Dorna base plate | <img src="https://i.imgur.com/ZKd1nrU.png" alt="Dorna Base Plate" width="100"/> |
-| 1 x Dorna TA robotic arm | <img src="https://i.imgur.com/9ukhF4G.png" alt="Dorna TA Robotic Arm" width="100"/> |
+| [1 x Dorna base plate](https://dorna.ai/) | <img src="https://i.imgur.com/ZKd1nrU.png" alt="Dorna Base Plate" width="100"/> |
+| [1 x Dorna TA robotic arm](https://dorna.ai/) | <img src="https://i.imgur.com/9ukhF4G.png" alt="Dorna TA Robotic Arm" width="100"/> |
 | [4 x M5 6mm screws](https://www.mcmaster.com/90128A228/) | <img src="https://i.imgur.com/2O6YVzy.png" alt="Screw" width="100"/>  |
 | [1 x Ethernet Splitter](https://a.co/d/cWE83wG) | <img src="https://i.imgur.com/DqInCuU.png" alt="Dorna TA Robotic Arm" width="100"/> |
 | [2 x Short Ethernet Cables](https://a.co/d/0XHGOBJ) | <img src="https://i.imgur.com/oqCmktp.png" alt="Dorna TA Robotic Arm" width="100"/> |
