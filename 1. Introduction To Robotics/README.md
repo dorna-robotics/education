@@ -1,21 +1,21 @@
 # **1. Introduction To Robotics**
 
 ## **Overview**
-This chapter aims to provide a comprehensive review of the current state of robotic applications in industry. We will explore the various types of robots and their use cases in different scenarios. This review will help us better understand the goals and prospects of this course, which aims to introduce us to the world of industrial robots.
+This chapter aims to comprehensively review the industry's current state of robotic applications. We will explore the various types of robots and their use cases in different scenarios. This review will help us better understand the goals and prospects of this course, which aims to introduce us to the world of industrial robots.
 
 Additionally, we will become familiar with the key components of industrial robots and examine a general-purpose robotic arm, such as the Dorna robot, which we will use as a training tool throughout this course. Understanding its basic features and safety concerns is crucial before we begin using it.
 
 ---
 ## **History of Industrial Robotics**
-Industrial robotics, is a sub-field of robotics that focuses on the automation of manufacturing processes. it has a rich history that spans over several decades. This introduction aims to provide a comprehensive overview of the key developments and milestones in the history of industrial robotics.
+Industrial robotics is a sub-field of robotics that focuses on the automation of manufacturing processes. it has a rich history that spans several decades. This introduction aims to provide a comprehensive overview of the key developments and milestones in the history of industrial robotics.
 
 ### *Early Beginnings*
 The concept of automata dates back to ancient civilizations, with early ideas appearing in Greek mythology. The 19th century saw advancements in automation with the invention of mechanical looms and other machinery during the Industrial Revolution.
-First automated machines can be dated back to early 20th Century. Early 20th century witnessed the development of more sophisticated automated machines. For instance, the assembly line, introduced by Henry Ford in 1913, revolutionized manufacturing but was still reliant on human labor.
+The first automated machines can be dated back to the early 20th Century. The early 20th century witnessed the development of more sophisticated automated machines. For instance, the assembly line, introduced by Henry Ford in 1913, revolutionized manufacturing but was still reliant on human labor.
 
 | ![](./images/fig1.jpg) | 
 |:--:| 
-| *Figure 1.1: From Charlie Chaplin’s “Modern Time” (1936) showing how the people in the the early 20th century looked on the advancement of industrial automation.* |
+| *Figure 1.1: From Charlie Chaplin’s “Modern Time” (1936) showing how the people in the early 20th century looked at the advancement of industrial automation.* |
 
 ### *The Birth of Modern Industrial Robotics*
 The 20th century saw significant advancements in many fields of science and technology. New technologies related to mechanical and electrical engineering, such as electronics, computer science, cybernetics, and electric motors, greatly contributed to the progress of robotics, industrial robotics, and automation.
@@ -52,7 +52,7 @@ SCARA (Selective Compliance Articulated Robot Arm) robots are characterized by t
 SCARA robots are commonly used in industries for tasks such as picking and placing objects, where only straight up-down and horizontal movements are needed. They are excellent for precise assembly operations as well as packaging and sorting tasks.
 | ![](./images/fig3.jpg) | 
 |:--:| 
-| *An example of a SCARA robot from EPSON company, with it’s distinctive parallel axes.* |
+| *An example of a SCARA robot from EPSON company, with its distinctive parallel axes.* |
 
 ### *Cartesian Robots (Gantry Robots)*
 Cartesian robots, also known as linear robots, operate on three linear axes (X, Y, and Z) and move in straight lines along these axes. They benefit from their simple design, high precision, and repeatability of motion. These robots are usually very easy to program and use, performing exceptionally well in tasks that primarily require non-rotating movements.
@@ -63,18 +63,18 @@ Cartesian robots are commonly used in manufacturing devices such as CNC machiner
 
 ### *Delta Robots (Parallel Robots)*
 Delta robots have a unique spider-like design with three arms connected to universal joints at the base. They are known for their high-speed and high-precision operations.
-These robots excel at high-speed pick and place task, they are lightweight and efficient. Because of this they are limited to specific tasks requiring precision, such as high-speed sorting and packaging and the assembly of small parts.
+These robots excel at high-speed pick-and-place tasks, they are lightweight and efficient. Because of this, they are limited to specific tasks requiring precision, such as high-speed sorting and packaging and the assembly of small parts.
 
 ### *Cylindrical Robots*
-Cylindrical robots have a rotary base and a prismatic (linear) joint configuration that moves in a cylindrical coordinate system. Their combination of linear and rotary motion makes them suitable for tasks within a cylindrical area and moderate flexibility and reach.
+Cylindrical robots have a rotary base and a prismatic (linear) joint configuration that moves in a cylindrical coordinate system. Their combination of linear and rotary motion makes them suitable for tasks within a cylindrical area and with moderate flexibility and reach.
 They are also used for tasks such as machine tending, material handling, and spot welding
 
 ### *Polar Robots (Spherical Robots)*
-Polar robots have a central pivot arm with rotational and linear joints, allowing them to operate within a spherical range of motion.These robots have wide reach and versatile movement and they are suitable for tasks requiring large operational areas.
+Polar robots have a central pivot arm with rotational and linear joints, allowing them to operate within a spherical range of motion. These robots have wide reach and versatile movement and they are suitable for tasks requiring large operational areas.
 Some of their common Applications are material handling, machine loading and unloading and also welding.
 | ![](./images/fig5.jpg) | 
 |:--:| 
-| *Schematic design of the polar (left) and cylindrical (right) robots. The degrees of freedom are shown here, arcs are rotatory and straight arrows are translational degrees of freedom* |
+| *Schematic design of the polar (left) and cylindrical (right) robots. The degrees of freedom are shown here, arcs are rotatory, and straight arrows are translational degrees of freedom* |
 
 ### *Collaborative Robots (Cobots)*
 Cobots, or collaborative robots, are designed to work alongside humans in a shared workspace. They are equipped with advanced sensors and safety features to ensure safe interaction with human operators. These types of robots are commonly easy to program and integrate, and they are flexible and adaptable to various tasks.
@@ -101,7 +101,7 @@ The manipulator, commonly referred to as the robotic arm, is the most visible pa
 <div style="border: 1px solid black; padding: 10px; background-color: #f0f0f0;">
 <h3 style="margin-top: 0;">Exercise 1</h3>
 Exercise 1.1
-Below is a picture of the robot model Dorna TA and beside that is a picture of an older version Dorna 2s. Judging by the picture of this different version of robot’s manipulator, count it’s number of degrees of freedom, and compare it’s possible ranges of motions with Dorna TA.
+Below is a picture of the robot model Dorna TA and beside that is a picture of an older version of Dorna 2s. Judging by the picture of this different version of the robot’s manipulator, count its number of degrees of freedom, and compare its possible ranges of motions with Dorna TA.
 </div>
 
 | ![](./images/fig6.jpg) | 
@@ -113,7 +113,7 @@ The end effector is the device attached to the end of the robotic arm, designed 
 
 | ![](./images/fig7.jpg) | 
 |:--:| 
-| * Different end effectors attached to Dorna TA for different tasks, from left to right: a camera for video/Image capture, a pneumatic gripper with specially made jaws for gripping on to a specific object, and a suction cup for pick and place a relatively lightweight object with a flat surface for the suction cup to hold on to* |
+| * Different end effectors attached to Dorna TA for different tasks, from left to right: a camera for video/Image capture, a pneumatic gripper with specially made jaws for gripping onto a specific object, and a suction cup for pick-and-place a relatively lightweight object with a flat surface for the suction cup to hold on to* |
 
 ### *Actuators*
 Actuators are the components responsible for converting energy into mechanical movement. They are essentially the muscles of the robot, driving the motion of the manipulator and end effector. Common types of actuators include electric motors, hydraulic cylinders, and pneumatic cylinders. Each type has its advantages: electric motors are precise and efficient, hydraulic actuators provide high power, and pneumatic actuators are lightweight and fast.
@@ -139,7 +139,7 @@ Sensors are critical for providing the robot with information about its environm
 |:--:| 
 | *Dorna TA’s camera input* |
 
-In this course, you will learn to work with a vision system and receive inputs from the robots input system and motor’s encoders. You will also learn how to set up custom input systems, such as proximity sensors, and also to incorporate the data acquired into the robot’s program.
+In this course, you will learn to work with a vision system and receive inputs from the robot's input system and motor's encoders. You will also learn how to set up custom input systems, such as proximity sensors, and also to incorporate the data acquired into the robot’s program.
 
 ### *Controller*
 The controller acts as the robot's brain, processing inputs from sensors and issuing commands to actuators. It runs the robot's software and algorithms, ensuring that tasks are performed correctly and efficiently. 
@@ -176,7 +176,7 @@ On the other hand, careless use of the robot may harm the robot, controller, con
 ### *Dorna TA Safety Features*
 #### *Brakes*
 The Dorna TA has a braking mechanism that activates when power is abruptly disconnected from the robot, preventing crashes and damage to the robot or workpiece.
-When power is cut from the robot’s motors, they are prone to rotate under any external force or the current momentum the robot have, totally out of control, since the motors lack a mechanical brake system. As the robot is always under the influence of its own weight, if the motors are free to rotate, it could fall towards the ground, causing unpredictable harm.
+When power is cut from the robot’s motors, they are prone to rotate under any external force or the current momentum the robot has, totally out of control, since the motors lack a mechanical brake system. As the robot is always under the influence of its own weight, if the motors are free to rotate, it could fall towards the ground, causing unpredictable harm.
 The brakes are designed to slow down the free fall of the robot, but remember that they are not intended for total position lock and are only present as a safety feature.
 
 #### *Emergency Stop*
@@ -192,11 +192,11 @@ You can also use the "Halt" button in Dorna Lab or the "Halt" command in the API
 
 | ![](./images/fig11.jpg) | 
 |:--:| 
-| * Configuring the emergency button (in the Dorna Lab settings). This involves reserving one of the robot’s input pins and a specific value for that pin. The controller will abruptly halt the robot's motions when the value of the input pin matches the given value. We will learn about the input pins in the upcoming chapters* |
+| *Configuring the emergency button (in the Dorna Lab settings). This involves reserving one of the robot’s input pins and a specific value for that pin. The controller will abruptly halt the robot's motions when the value of the input pin matches the given value. We will learn about the input pins in the upcoming chapters* |
 
 #### *Collision Detection Safety Function*
 
-Collision detection is a critical safety feature in industrial robotics, designed to prevent accidents and damage by detecting and responding to unexpected contacts between the robot and its environment. This technology uses sensors, such as force-torque sensors and accelerometers, and in the case of Dorna robotic arm it uses the motor’s encoders, to monitor the forces and movements experienced by the robot. When the system detects an abnormal force or deviation, it can trigger an immediate response, such as halting the robot's motion or retracting its arm to avoid or minimize the impact.
+Collision detection is a critical safety feature in industrial robotics, designed to prevent accidents and damage by detecting and responding to unexpected contacts between the robot and its environment. This technology uses sensors, such as force-torque sensors and accelerometers, and in the case of the Dorna robotic arm, it uses the motor’s encoders, to monitor the forces and movements experienced by the robot. When the system detects an abnormal force or deviation, it can trigger an immediate response, such as halting the robot's motion or retracting its arm to avoid or minimize the impact.
 
 By integrating collision detection, industrial robots like the Dorna robot can operate more safely in environments where humans are present. This feature not only protects workers from potential injuries but also safeguards the robot and its tooling from damage. Collision detection enhances the overall reliability and safety of robotic systems, allowing for closer human-robot collaboration and reducing the need for extensive physical barriers. As a result, workplaces can achieve higher efficiency and flexibility while maintaining stringent safety standards.
 
@@ -210,13 +210,13 @@ Below you see the effects caused by increasing or decreasing the error threshold
 
 | ⬆️ Increasing error threshold/duration      | ⬇️ Decreasing error threshold/duration     |
 |--------------|--------------|
-| The robot becomes less sensitive to external forces |The robot becomes more sensitive to external forces and can go into an alarm mode easier  |
+| The robot becomes less sensitive to external forces |The robot becomes more sensitive to external forces and can go into an alarm mode more easily  |
 | More risk assessments are required as the robot is less sensitive to detect collisions| This mode is recommended when operating the robot around a human or sensitive object  | 
 | The robot can operate at a higher speed or larger payload before entering an alarm | Now, you must operate the robot at a lower speed or payload |
 |The robot can collide with an object without entering an alarm mode |  | 
 
 ### *Safety Precautions*
-Here, we will review some important precautions to keep in mind while working with robots (specially the Dorna TA). These precautions should concern you before turning the robot's power on, while the robot's power is on and it's operational, and when the work is completed and you are turning the power off.
+Here, we will review some important precautions to keep in mind while working with robots (especially the Dorna TA). These precautions should concern you before turning the robot's power on, while the robot's power is on and it's operational, and when the work is completed and you are turning the power off.
 
 #### *Before Turning the Robot's Power On*
 - Ensure all connections are secure and correctly plugged in
@@ -225,7 +225,7 @@ Here, we will review some important precautions to keep in mind while working wi
     - Make sure the connections are secure using the screws on the robot cables.
 - In case an emergency stop button is installed, verify that it is accessible and functional.
 - Check that the work area is clear of obstacles or hazards.
-- Inspect the robot arm and its controller box for damages. If either appears damaged, do not use them and contact the instructors immediately.
+- Inspect the robot arm and its controller box for damages. If either appears damaged, do not use them, and contact the instructors immediately.
 - Do not modify or disassemble the robot arm or the controller.
 - Do not use or store the robot and its controller in a humid environment.
 - Check the robot’s Installation to the table/ground is proper, If the robot tips and falls from a height, it may cause an injury and certainly get damaged.
@@ -234,27 +234,27 @@ Here, we will review some important precautions to keep in mind while working wi
 - Always be alert and attentive to the robot's movements.
 - Avoid reaching into the robot's workspace while it's in operation.
 - Monitor the robot's status and immediately halt operations if any abnormalities occur.
-- You should keep in mind that improper use of the robot may cause the motors to lose power, for example under the circumstances listed below the motors will fail:
+- You should keep in mind that improper use of the robot may cause the motors to lose power, for example, under the circumstances listed below the motors will fail:
   - Motions with high speed, acceleration, or jerk.
-  - Applying too much torque on the motors, this may happen by asking the robot to pick an overweight object or to move while an obstacle is blocking it’s way.
+  - Applying too much torque on the motors. This may happen whenever asking the robot to pick an overweight object or to move while an obstacle is blocking its way.
   - Turning the controller off or disconnecting cables while it’s working.
   - When the robot hits an object.  
 
-#### *When the Work is Done and Turning the Power Off*
+#### *When the Work is Done*
 - Safely remove any tools or end-effectors from the robot.
 - Ensure the robot is in a safe position and not blocking walkways.
 - Use the designated shutdown procedure to power off the robot safely.
 
 <div style="border: 1px solid black; padding: 10px; background-color: #c8e3c3;">
 <h3 style="margin-top: 0;">Lab Exercise 2</h3>
-Turning on the robot for the first time: In this exercise you should follow the steps below to turn on the robot for the first time. Keeping safety cautions you learned about in mind.
+Turning on the robot for the first time: In this exercise, you should follow the steps below to turn on the robot for the first time. Keeping safety cautions you learned about in mind.
 
   <ul>
     <li>Check the installation. Is it stable enough?</li>
-    <li>Place the robot in a proper orientation for beginning.</li>
+    <li>Place the robot in a proper orientation for the beginning.</li>
     <li>Connect the Controller to the power supply that is prepared by the instructor.</li>
     <li>Attach one side of the robot DB-25 and DB-9 cable to the back of the robot base and the other side to the back of the controller. Ensure the connections are secure using the screws available on the DB shells.</li>
-     <li>Check the if the environment is empty enough, there should not be any obstacle in the vicinity of the robot.</li>
+    <li>Check if the environment is empty enough, there should not be any obstacle in the vicinity of the robot.</li>
   </ul>
 
   Now try powering the robot on.
