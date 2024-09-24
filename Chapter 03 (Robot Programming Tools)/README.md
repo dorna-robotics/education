@@ -71,7 +71,7 @@ In this section, we’ll use the Dorna Lab “script” panel to send commands a
 Each command/message is a self-sufficient line with JSON format like below:
 
 ```JSON
-{"key-1": value-1, "key-2": value-2, ... , "key-n": value-n}
+{"key-1":value-1, "key-2":value-2, ... , "key-n":value-n}
 ```
 
 Here the string ```"key-i"`` is the name of the i-th parameter and ```value-i``` is the value assigned to that parameter. One should choose the desired keys needed for the command their sending and should assign proper values to the keys.
