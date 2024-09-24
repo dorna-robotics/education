@@ -1,7 +1,7 @@
 # **1. Introduction To Robotics**
 
 ## **Overview**
-This chapter aims to comprehensively review the industry's current state of robotic applications. We will explore the various types of robots and their use cases in different scenarios. This review will help us better understand the goals and prospects of this course, which aims to introduce us to the world of industrial robots.
+This chapter aims to review the industry's current state of robotic applications comprehensively. We will explore the various types of robots and their use cases in different scenarios. This review will help us better understand the goals and prospects of this course, which aims to introduce us to the world of industrial robots.
 
 Additionally, we will become familiar with the key components of industrial robots and examine a general-purpose robotic arm, such as the Dorna robot, which we will use as a training tool throughout this course. Understanding its basic features and safety concerns is crucial before we begin using it.
 

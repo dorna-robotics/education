@@ -399,9 +399,10 @@ Velocity is the rate of changing of the position in the unit of time, or more pr
 
 But this only holds if we are working with the XYZ (Cartesian) parameters to describe the robot's state. If the state is described using the joint values, then the velocity should be defined as the rate of change in the joint angles over time, and the unit we measure it in is <b>deg/s<b>.
 
-Acceleration is the rate of changes in velocity over time, its measuring unit is then <b>mm/s<sup>2</sup></b> or  <b>deg/s<sup>2</sup><b>.
+Acceleration is the rate of changes in velocity over time, its measuring unit is then <b>mm/s<sup>2</sup></b> or  <b>deg/s<sup>2</sup></b>.
 
-Jerk is the rate of changes in acceleration over time, its measuring unit is then <b>mm/s<sup>3</sup></b> or  <b>deg/s<sup>3</sup><b>.
+Jerk is the rate of changes in acceleration over time, its measuring unit is then <b>mm/s<sup>3</sup></b> or  <b>deg/s<sup>3</sup></b>.
+
 </div>
 
 ### *Motion Parameters*
@@ -409,6 +410,7 @@ Jerk is the rate of changes in acceleration over time, its measuring unit is the
 We’ll now take a look at the parameters that describe a motion and their roles:
 
 #### *Start/End Points*
+
 To command the robot to perform a motion you’ll have to send a message containing the instruction from which the robot could calculate the resulting/final state of that motion. It’s not necessary to submit the initial state of the motion for each motion command, because presumably, the initial point of each motion, is the robot’s state when that motion is going to be performed. After all, it’s only the goal that matters, and the initial point of the next motion was determined as the end point of the last motion command.
 
 But what are the possible ways to send the endpoint information? As you’ve seen before, we have two possible ways to describe any robot’s state, using Joints-space or XYZ-space values. You can submit a motion command by specifying the endpoints in any of these two spaces.
@@ -567,12 +569,12 @@ Accuracy and precision are important concepts in the field of industrial robotic
 The interplay between accuracy and precision is a determining factor in the performance of industrial robots. A robot can be precise but not accurate, meaning it can consistently reach the same position, but that position may not be the correct one. On the other hand, a robot can be accurate but not precise, hitting the target correctly in different positions, but not consistently. Ideally, industrial robots should be both accurate and precise to ensure optimal performance and product quality.
 
 <div style="border: 1px solid black; padding: 10px; background-color: #c8e3c3;">
-<h3 style="margin-top: 0;">Lab Exercise 2</h3>
+<h3 style="margin-top: 0;">Lab Exercise 3</h3>
 
 </div>
 
 <div style="border: 1px solid black; padding: 10px; background-color: #c8e3c3;">
-<h3 style="margin-top: 0;">Lab Exercise 3</h3>
+<h3 style="margin-top: 0;">Lab Exercise 4</h3>
 <b>Testing out the continuous motion</b>
 
 Without using the continuous motion option, the robot has to stop completely at the end of each motion to be able to maneuver the sharp edges. This results in a lot of unnecessary time wasted on deceleration and acceleration. This may not seem very important in some applications but in many cases avoiding unnecessary brakes is a need. 
