@@ -15,7 +15,7 @@ The first automated machines can be dated back to the early 20th Century. The ea
 
 | ![](./images/fig1.jpg) | 
 |:--:| 
-| *Figure 1.1: From Charlie Chaplin’s “Modern Time” (1936) showing how the people in the early 20th century looked at the advancement of industrial automation.* |
+| *From Charlie Chaplin’s “Modern Time” (1936) showing how the people in the early 20th century looked at the advancement of industrial automation.* |
 
 ### *The Birth of Modern Industrial Robotics*
 The 20th century saw significant advancements in many fields of science and technology. New technologies related to mechanical and electrical engineering, such as electronics, computer science, cybernetics, and electric motors, greatly contributed to the progress of robotics, industrial robotics, and automation.

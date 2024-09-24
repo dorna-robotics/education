@@ -395,9 +395,10 @@ A robot’s motion is defined as a series of temporal interpolations of the robo
 
 <div style="border: 1px solid black; padding: 10px; background-color: #faeeb6;">
 <h3 style="margin-top: 0;">Note </h3>
+    
 Velocity is the rate of changing of the position in the unit of time, or more precisely speaking, velocity is the time derivative of the position, and of course, it has the units of <b>mm/s</b>. For example, if the z value of the robot changes 6 mm every 3 seconds, the velocity is 2 mm/s.
 
-But this only holds if we are working with the XYZ (Cartesian) parameters to describe the robot's state. If the state is described using the joint values, then the velocity should be defined as the rate of change in the joint angles over time, and the unit we measure it in is <b>deg/s<b>.
+But this only holds if we are working with the XYZ (Cartesian) parameters to describe the robot's state. If the state is described using the joint values, then the velocity should be defined as the rate of change in the joint angles over time, and the unit we measure it in is <b>deg/s</b>.
 
 Acceleration is the rate of changes in velocity over time, its measuring unit is then <b>mm/s<sup>2</sup></b> or  <b>deg/s<sup>2</sup></b>.
 
