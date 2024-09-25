@@ -1,4 +1,4 @@
-# **3. Inputs and Outputs**
+# **4. Inputs and Outputs**
 
 
 The input/output (I/O) system is crucial in robotic systems, as it serves as the primary interface between the robot and its environment. This system facilitates the communication and coordination necessary for the robot to perform all sorts of tasks. Inputs from sensors provide real-time data about the robot's surroundings, enabling it to adapt to changes and make informed decisions. On the other hand, outputs control actuators and other devices to execute actions. 
@@ -425,10 +425,10 @@ from dorna2 import Dorna
 
 #Defining the function that executes on messages
 def on_message(msg, union, robot):
-	if "in0" in msg:
-    	if msg["in0"] == 1:
-    		robot.halt()
-    		robot.set_alarm(1)
+    if "in0" in msg:
+        if msg["in0"] == 1:
+            robot.halt()
+            robot.set_alarm(1)
 
 #Create the Dorna object
 robot = Dorna()
