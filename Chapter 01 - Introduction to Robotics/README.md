@@ -91,7 +91,6 @@ Imagine this robot performing different jobs, and imagine some of the tasks youâ
 </div>
 
 ---
-
 ## **Key Components of Robotic Systems**
 Industrial robots have revolutionized manufacturing processes, enhancing efficiency, precision, and productivity. These sophisticated machines are designed to perform repetitive and complex tasks with high accuracy, often in environments that are hazardous or unsuitable for human workers. Here are the fundamental components that commonly make up an industrial robotic system.
 
@@ -154,7 +153,6 @@ Accompanying the Dorna robotic arm is a robotic interface software and a program
 The API, on the other hand, is a lower-level Python library that helps you programmatically interact with the robot, send commands, and receive and handle data from encoders and sensors. Both of these systems are crucial for our journey throughout this course.
 
 ---
-
 ## **Safety**
 
 Industrial robotics have revolutionized manufacturing by improving efficiency, precision, and flexibility. However, the integration of these advanced machines into workplaces also brings significant safety considerations. Ensuring the safety of personnel working alongside robots is important, requiring a comprehensive approach that encompasses both technology and operational protocols.

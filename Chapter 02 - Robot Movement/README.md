@@ -2,7 +2,8 @@
 
 ## **Overview**
 In this chapter, we will learn everything needed to make the robot move around, from the fundamentals of the robot’s positionings, the parameters, and different representations describing the robot's position, to the details of the robot's motions. Meanwhile, we will overview the basic geometrical and mathematical needed to deepen our understanding of this subject.
-    
+
+---
 ## **Basics of Robots Positioning**
 The ultimate goal of working with robots in general or more specifically, industrial robots, is to move the objects or tools in the environment in a planned and deterministic manner in response to the observed state of the world. The input comes from the sensors for the cameras, it will get processed in a processing unit, and the result or output is always a series of motion commands for the robot that results in a desired outcome. To plan and design a proper motion for the robot, we have to know its specific movement capabilities, what the controllable parameters of the robots are, and how changing these parameters results in a motion in 3-dimensional space. 
 
@@ -390,6 +391,7 @@ The Dorna Lab lets you easily assign the ```Tool_2_Flange``` matrix, by specifyi
 
 In order to assign the **Tool_2_Flange** matrix in Dorna TA by setting its displacement and axis-angle vectors, you can use the TCP section in the **“Setting”** tab of the Dorna Lab. Enter the values in the input fields and click on the “Set” button. After the values are assigned inside the controller, the gray values will change to your desired values.
 
+---
 ## **Motion**
 A robot’s motion is defined as a series of temporal interpolations of the robot's configuration between two or more states. Each motion is characterized by its initial and final points (or even middle points), It’s also modified by parameters such as velocity, acceleration ( and also “jerk” ), and the type of motion (e.g. line or joint move).
 

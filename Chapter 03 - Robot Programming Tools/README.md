@@ -47,7 +47,7 @@ Variables are symbolic names given to data that can hold different values. They 
 
 Handling timing and wait states in robotic systems is a crucial aspect of programming, ensuring precise synchronization and coordination of tasks. It's important to control time delays between operations and manage the waiting times required for receiving inputs. For instance, consider a scenario where you need to scan barcodes of items in a box using a scanner toolhead attached to the robot. First, you command the robot to move to the correct position for scanning. Then, you instruct the scanner to initiate the scan, but this process typically takes a few seconds to complete. Without implementing appropriate wait times, if the robot moves away too quickly, the barcode scan may not finish successfully, leading to incomplete or inaccurate readings. Proper timing control ensures that each task is completed before moving on to the next, maintaining the system's efficiency and reliability.
 
-
+---
 ## **Dorna Command System**
 Before learning to program the Dorna TA robotic system, we will learn the command system that is the main way of interacting with this robot. We talked about some simple “motion” commands in the last chapter. Here we will explore the whole variety of commands and their features and abilities.
 
@@ -343,6 +343,7 @@ Sending this command returns the version of the firmware.
 </tr>
 </table>
 
+---
 ## **Blockly**
 
 Blockly is a visual programming language developed by Google that allows users to create programs by assembling blocks that represent code concepts. These blocks can be dragged, dropped, and snapped together like puzzle pieces, providing a more intuitive and accessible way to write code, especially for beginners and those unfamiliar with traditional text-based programming languages. Blockly also makes prototyping and testing easy and fast.
@@ -723,7 +724,7 @@ In this exercise, we want to write our first Blockly program. Complete your code
 
 </div>
 
-
+---
 ## **Python Programming**
 
 The Dorna Python API lets you interact with the robot by writing Python codes. 
@@ -944,6 +945,7 @@ To select your startup program, write your Python code in the Python tab of the 
 
 Enter the full address of the file(s). Click on “Set” button. From now on this code will be executed whenever the controller is turned on.
 
+---
 ## **Jupyter Notebook**
 Using Jupyter notebooks offers several advantages over traditional Python scripting or visual programming tools like Blockly. Jupyter notebooks provide an interactive and dynamic environment, allowing programmers to write and execute code in small, manageable chunks, which is particularly useful for testing and debugging complex robotic algorithms. The ability to combine code with rich text, visualizations, and multimedia in a single document enhances documentation and makes it easier to share and collaborate on projects. 
 This environment encourages exploratory programming and rapid prototyping, essential for developing and fine-tuning robotic systems. Additionally, Jupiter’s extensive library support and integration capabilities with various data sources and computational tools streamline the process of implementing advanced functionalities, such as machine learning and data analysis, directly within the robotic programming workflow. In contrast, while visual programming tools like Blockly are excellent for beginners and straightforward tasks, they can become cumbersome for more sophisticated applications, lacking flexibility.
