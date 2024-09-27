@@ -1,6 +1,6 @@
 ## **YOLOv4 Training**
 
-<a href='https://colab.research.google.com/drive/16OozKrCunzDAf50p3QLWYyivqnQZXBix?usp=sharing' target="_blank"><img alt='Google Colab' src='https://img.shields.io/badge/Colab-100000?style=flat&logo=Google Colab&logoColor=ffa500&labelColor=383838&color=ffa500'/></a>
+<a href='https://colab.research.google.com/drive/1sCEudInd4qJ-fH-ODTRq6NGmZRTV0rO4#scrollTo=SobmJZ764q4l' target="_blank"><img alt='Google Colab' src='https://img.shields.io/badge/Colab-100000?style=flat&logo=Google Colab&logoColor=ffa500&labelColor=383838&color=ffa500'/></a>
 
 Before starting, ensure your Colab environment is set to use GPU for faster training. Go to **Runtime** > **Change runtime type** > **Hardware accelerator** and select **GPU**.
 
