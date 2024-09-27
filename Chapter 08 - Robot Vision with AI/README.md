@@ -1,4 +1,4 @@
-# **8. Robot Vision with AI **
+# **8. Robot Vision with AI**
 
 In modern industrial automation, integrating AI vision into robotic arm systems has become essential for enhancing operational efficiency and precision. This chapter provides a practical guide on using AI vision, particularly YOLO, to enhance the capabilities of industrial robotic arm systems.
 
@@ -216,9 +216,9 @@ The ```pxl``` is the 2D coordinate of the detected instance with the highest con
     
 In this exercise, we want to teach the robot to detect human faces and point at them.
 
-**Step 1**: Gather a dataset of at least 20 pictures, that contain human faces. To do so you can photograph your surroundings (don’t take anyone's photo without their permission!) or use pictures available online. The photos should contain multiple human faces, with different orientations, with different genders, and races. The faces may be near the camera or far away, containing both cases.
+**Step 1**: Gather a dataset of at least 20 pictures, that contain human faces. To do so you can photograph your surroundings (don’t take anyone's photo without their permission!) or use pictures available online. The photos should contain multiple human faces, in different orientations and light conditions. The faces may be near the camera or far away.
 
-**Step 2**: Upload the photos to Roboflow to label the human faces, create a project, and add your teammates to it so that you can all work on the annotation job at the same time. You can just use the “Object detection” method and annotate the data by drawing the bounding boxes. 
+**Step 2**: Upload the photos to Roboflow to label the human faces, create a project, and add your teammates, so that you can work on the annotation job at the same time. You can just use the "Object Detection" method and annotate the data by drawing the bounding boxes. 
 
 **Step 3**: Prepare the data, perform the training, and save the trained model in a Google Drive directory. Integrate your trained model into your robot program. Make it ready to detect human faces and report the human face with the highest confidence factor’s position with respect to the base frame. Create a detection loop for the robot that iterates every second (place ```time.sleep(1)``` at the end of the loop).
 
@@ -235,3 +235,10 @@ t_face_2_base = t_face_2_base / np.linalg.norm(t_face_2_base)
 
 Now calculate J0 and J1 based on these formulas:
 
+```python
+J0 = np.arctan2(t_face_2_base[1] , t_face_2_base[0])
+J1 = np.arcsin(t_face_2_base[2])
+```
+But keep in mind that the J0 and J1 values above are in radian units and you should transform them to degrees. Create a ```jmove``` command based on these values. Implement this code in a separate function and call this function in your vision only if the detection has been successful in that iteration. Otherwise, the robot should stay stationary.
+
+</div>
