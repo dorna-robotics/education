@@ -8,9 +8,9 @@ In this project, you'll use the Dorna TA robotic arm and 3d vision system to det
 |---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/blob/main/mount_robot/README.md#parts) |   |
 | [Suction gripper mounting parts](https://github.com/dorna-robotics/education/tree/main/attach_suction_gripper#parts) |   |
-| [1 x Chip holder/board](https://github.com/dorna-robotics/education/blob/main/ml_object_detection/Assets/GamePieceHolder%20v9.stl) | <img src="https://i.imgur.com/YC4SMsz.png" alt="Chip Holder/Board" width="100"/> |
-| [1 x Set of chips](https://github.com/dorna-robotics/education/blob/main/ml_object_detection/Assets/Chips%20v4.stl) | <img src="https://i.imgur.com/eWH0BdG.png" alt="Set of Chips" width="120"/> |
-| [3 x M3 8mm screws](https://www.mcmaster.com/91290A113/) | <img src="https://i.imgur.com/S8DSl5u.png" alt="Set of Chips" width="100"/>  |
+| [1 x Chip holder/board](https://github.com/dorna-robotics/education/blob/main/ml_object_detection/Assets/GamePieceHolder%20v9.stl) | <img src="./Assets/Images/68747470733a2f2f692e696d6775722e636f6d2f594334534d737a2e706e67.png" alt="Chip Holder/Board" width="100"/> |
+| [1 x Set of chips](https://github.com/dorna-robotics/education/blob/main/ml_object_detection/Assets/Chips%20v4.stl) | <img src="./Assets/Images/68747470733a2f2f692e696d6775722e636f6d2f655748304264472e706e67.png" alt="Set of Chips" width="120"/> |
+| [3 x M3 8mm screws](https://www.mcmaster.com/91290A113/) | <img src="./Assets/Images/68747470733a2f2f692e696d6775722e636f6d2f533844536c35752e706e67.png" alt="Set of Chips" width="100"/>  |
 
 ## **Assembly instructions**
 
