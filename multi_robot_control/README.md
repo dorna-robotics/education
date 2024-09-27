@@ -29,11 +29,11 @@ Here’s the table that defines the communication protocol between the robots:<b
 |:---|---|
 | [Robot mounting parts](https://github.com/dorna-robotics/education/tree/main/mount_robot#parts) |   |
 | [Robot suction gripper parts](https://github.com/dorna-robotics/education/blob/main/attach_suction_gripper/README.md#parts) |   |
-| [3 x Base plate connectors](https://dorna.ai/) | <img src="https://i.imgur.com/ApHx3pN.png" alt="Base Plate Connectors" width="100"/> |
-| [10 x Tic-tac-toe game pieces](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/Chips%20v2.stl) | <img src="https://i.imgur.com/eWH0BdG.png" alt="Set of Chips" width="120"/> |
-| [1 x Tic-tac-toe game board](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GameBoard%20v17.stl) | <img src="https://i.imgur.com/ZgE4bXc.png" alt="Game Board" width="100"/> |
-| [2 x Tic-tac-toe game piece holders](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GamePieceHolder%20v12.stl) | <img src="https://i.imgur.com/Zz2rPqp.png" alt="Game Piece Holders" width="100"/> |
-| [1 x Wire](https://a.co/d/hIP1Gwt) | <img src="https://i.imgur.com/juX3bTV.png" alt="Wire" width="100"/> |
+| [3 x Base plate connectors](https://dorna.ai/) | <img src="./assets/Images/31.png" alt="Base Plate Connectors" width="100"/> |
+| [10 x Tic-tac-toe game pieces](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/Chips%20v2.stl) | <img src="./assets/Images/32.png" alt="Set of Chips" width="120"/> |
+| [1 x Tic-tac-toe game board](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GameBoard%20v17.stl) | <img src="./assets/Images/33.png" alt="Game Board" width="100"/> |
+| [2 x Tic-tac-toe game piece holders](https://github.com/dorna-robotics/education/blob/main/multi_robot_control/assets/GamePieceHolder%20v12.stl) | <img src="./assets/Images/34.png" alt="Game Piece Holders" width="100"/> |
+| [1 x Wire](https://a.co/d/hIP1Gwt) | <img src="./assets/Images/35.png" alt="Wire" width="100"/> |
 
 ## **Assembly instructions**
 
