@@ -7,47 +7,47 @@ End-of-arm tooling (EOAT) is a critical component in the field of industrial rob
 ## **Different Types of EOATs**
 The design and selection of EOAT are crucial to the success of robotic applications. Factors such as the weight, size, and material of the objects being handled, as well as the required precision and speed of the task, must be considered. Additionally, the environment in which the robot operates can influence the choice of EOAT. 
 
-### *Grippers*
+### **Grippers**
 Grippers are perhaps the most widely used type of EOAT and come in several forms:
 
-#### *Mechanical Grippers*
+#### **Mechanical Grippers**
 Mechanical grippers use fingers or jaws to grasp objects. They are further categorized into two, three, or multi-finger grippers that are usually controlled using electric servo motors. These are suitable for tasks requiring precise control and handling of a wide range of object shapes and sizes.
 
 | ![](./images/fig1.jpg) | 
 |:--:| 
 | *A sample of the mechanical gripper* |
 
-#### *Pneumatic Grippers*
+#### **Pneumatic Grippers**
 Pneumatic grippers use compressed air to operate their gripping mechanism. They are widely used due to their simplicity, reliability, and speed. Pneumatic grippers can exert significant force, making them suitable for a range of applications, including pick-and-place tasks and assembly operations. They are generally cost-effective and easy to maintain.
 
 | ![](./images/fig2.jpg) | 
 |:--:| 
 | *A pneumatic gripper with 2 fingers controlled by compressed airflow* |
 
-#### *Vacuum Grippers*
+#### **Vacuum Grippers**
 Vacuum grippers use suction to pick up and hold objects. They are ideal for handling flat or smooth surfaces like glass, metal sheets, or plastic parts. Vacuum grippers are common in packaging, palletizing, and material handling operations. They offer a clean and non-invasive way to handle delicate or surface-sensitive items.
 
 | ![](./images/fig3.jpg) | 
 |:--:| 
 | *Suction gripper handling object with flat surface* |
 
-#### *Soft Grippers*
+#### **Soft Grippers**
 Soft grippers are a unique type of end-of-arm tooling (EOAT) that are designed to handle delicate or irregularly shaped objects. Unlike traditional rigid grippers, soft grippers are made from flexible, compliant materials such as silicone, rubber, or other elastomers. This flexibility allows them to conform to the shape of the objects they are grasping, providing a gentle yet secure grip. Soft grippers are particularly useful in applications where traditional grippers might damage the items being handled or struggle to grasp irregular shapes. Some applications of these types of grippers are in food processing and packaging, medical and pharmaceutical applications, and handling delicate electronic components.
 
 | ![](./images/fig4.jpg) | 
 |:--:| 
 | *Soft gripper handling a delicate object* |
 
-### *Sensors and Inspection Tools*
+### **Sensors and Inspection Tools**
 Sensors and inspection tools are used to provide feedback and ensure quality control. These can include vision systems, force-torque sensors, and proximity sensors. Vision systems allow robots to identify and locate objects, perform inspections, and guide other EOATs with high precision. Force-torque sensors help robots apply the right amount of pressure when handling delicate objects or performing assembly tasks.
 
-### *End Effectors for Assembly*
+### **End Effectors for Assembly**
 These are specialized tools designed for assembly tasks. They can include screwdrivers, nut runners, and rivet guns, among others. Assembly end effectors are used in industries like electronics, automotive, and consumer goods manufacturing to automate the assembly of components and products.
 
-### *Cutting and Drilling Tools*
+### **Cutting and Drilling Tools**
 Cutting and drilling tools are EOATs used to cut, trim, or drill materials. These tools are commonly used in manufacturing processes involving metal, plastic, or composite materials. Robotic cutting and drilling provide high precision and consistency, improving product quality and reducing waste.
 
-### *Specialized EOATs*
+### **Specialized EOATs**
 In addition to the common types mentioned above, there are specialized EOATs designed for unique applications. For example, robotic grippers used in agriculture may be designed to handle delicate fruits and vegetables without causing damage. Medical robots may use specialized surgical tools for precise operations.
 
 ---
@@ -72,9 +72,9 @@ In most use cases in industry, the tool attached to the end of the robot's job i
 
 A pneumatic system in robotics uses compressed air to drive mechanical movements, offering a versatile means of control. This system typically involves components such as air compressors, valves, cylinders, and actuators to enable tasks like pushing, pulling, or gripping. Pros of pneumatic systems include their simplicity, high speed, and ability to generate significant force with relatively low energy consumption. 
 
-### *Components of Pneumatic System*
+### **Components of Pneumatic System**
 
-#### *Air Compressor*
+#### **Air Compressor**
 An air compressor in pneumatic systems serves as the primary source of compressed air. It works by drawing in ambient air, compressing it to a higher pressure, and storing it in a tank for subsequent use. Compressors are driven by electric motors, and they come in various types, including reciprocating, rotary screw, and centrifugal compressors. The choice of compressor depends on factors such as the required pressure, flow rate, and application specifics.
 
 The air compressor is responsible for a consistent pressure difference in the air tubes. We can check the pressure value from the pressure sensors usually installed on the compressor and we can control it using the compressor’s special control mechanism. Since the resulting force created by the pressure at the end effector, the jaw force of a pneumatic gripper, and the suction force of a suction cup, are proportional to the pressure value, it is important to choose a proper value for it. Different tools require specific pressure values usually to operate properly and safely. For example, using the Dorna TAs pneumatic toolkit, 500kPa is usually a good pressure value.
@@ -84,14 +84,14 @@ The air compressor is responsible for a consistent pressure difference in the ai
 | *Sample of an air compressor* |
 
 
-#### *Air Compressor Adaptors*
+#### **Air Compressor Adaptors**
 There is a set of coupler pieces needed to transform the compressor output to the tubes used for transferring the compressed air from the compressor to where it’s going to be used. We always have to find the proper connection pieces to attach the compressor output (usually using a “Universal quick connector”) to the hose. The Dorna pneumatic kit uses a 6mm air tube.
 
 |![](./images/fig8.jpg) | 
 |:--:| 
 | *Example pieces for attaching a 6mm air tube to the compressor* |
 
-#### *Control Unit*
+#### **Control Unit**
 Next up on the line is a mechanism for controlling the airflow from the compressor to our system, and guiding it to the parts of the system we wish. This system should take orders from the robot’s controller to allow or to stop the air pressure to flow from the compressor’s air tubes into the tool’s air tubes. Without this controlling device in the middle, the tool could only stay in the activation state. Another benefit of this mediating control unit is that we can branch out the compressor’s air for sending into different parts of a multi-part air-driven tool, and choose between any of the branches. 
 
 In the Dorna pneumatic kit, a solenoid air valve is used. Solenoid air valves control the flow and direction of compressed air. These valves are electrically actuated, using a solenoid coil to open or close the valve, thereby regulating the air pressure. When the solenoid is energized, it creates a magnetic field that shifts the valve's position, allowing air to either enter or exit. 
@@ -121,18 +121,18 @@ In this case, the ```P``` is connected to ```B``` and ```A``` is connected to ex
 
 So by (de)activating the valve, we are free to drive the airflow into one of the two outlet ports. If in some cases only one outlet port is needed, we can easily seal off one of the outlets and only use the other one. For example, if port ```A``` is closed, the selenoid will flow the air to port ```B``` when activated and will connect B to the exhaust when deactivated. 
 
-#### *Air Transfer*
+#### **Air Transfer**
 The air under the control of the solenoid valve should be transferred to the tool at the end of the robot using air tubes. Dorna TA is equipped with a built-in air tube system, with two inputs at the base and two outputs near the end of the robot’s arm. This will save us from attaching external tubes to the robotic arm, that may get tangled or bent improperly, and thus makes installing a pneumatic system much easier.
 
 |![](./images/fig12.jpg) | 
 |:--:| 
 | *The air outlet’s on the 4’th arm, that can be easily connect to the tool* |
 
-#### *Tool*
+#### **Tool**
 Finally pneumatic tool can be attached as the end effector of the robot, and the compressed air is fed to it via the two air outputs at the 4th arm. The pneumatic tool either works with positive air pressure difference (pneumatic grippers) or negative air pressure difference (soft grippers and suction grippers). 
 
 
-### *Control Wiring*
+### **Control Wiring**
 To be able to control the solenoid using the robot’s controller, we will use a relay already installed on the valve and a PSU (power source unit) that will supply the electric power needed to activate the solenoid. The controller’s output will only connect or disconnect the PSU’s DC current to the solenoid via the relay. 
 
 |![](./images/fig13.jpg) | 
@@ -141,10 +141,10 @@ To be able to control the solenoid using the robot’s controller, we will use a
 
 The figure above shows how the connection should be done. Pin 4 on the relay connects to the output pin on the controller, and pin 3 connects to the VCC(+24V) port on the controller. And a wire should connect the solenoid’s positive port to the PSU positive port, and the relay’s pin 1 to the PSU’s ground.
 
-### *Air Connection*
+### **Air Connection**
 Now let’s review how the air connection should be set up for different kinds of tools.
 
-#### *Pneumatic Gripper*
+#### **Pneumatic Gripper**
 These grippers are driven by the force of the air’s pressure. An example 2-finger pneumatic gripper is displayed below. This gripper has two ports called ```S``` and ```O```. Applying pressure to one of these ports will push both fingers toward the center, the pose in which the gripper holds the object, and applying pressure to the other port will push both fingers outward from the center, the pose in which the gripper releases objects.
 
 
@@ -165,7 +165,7 @@ In this exercise, you will set up a pneumatic gripper for the first time and wil
 
 </div>
 
-#### *Suction Gripper and Soft Gripper*
+#### **Suction Gripper and Soft Gripper**
 Suction grippers and soft grippers are both used for handling lightweight and delicate items. The main operational difference between these two pneumatic tools and the pneumatic gripper is that the pneumatic gripper works with a positive air difference, but the suction gripper and soft grippers work with a negative air difference (vacuum).
 
 To create a negative air force, using the compressed air setup, we need a new set piece called “Vacuum Ejector”. A vacuum ejector is a device that uses the Venturi effect to create vacuum. It operates by passing high-pressure air through a narrow nozzle, which increases the velocity of the fluid and decreases its pressure. This low-pressure region creates suction, drawing in surrounding air through a secondary inlet. The mixture of the driving fluid and the entrained air or gas then exits the ejector at a higher pressure. 

@@ -11,7 +11,7 @@ Most of the time, the source of motion in all sorts of rigid robotic systems is 
 
 Specifying the robot’s joints to achieve a desired orientation is not the only possible way to set its state, but it’s usually the most basic and easy way. So first we have to study our robot's joint values and geometric setup.
 
-### *Basics of Robots Positioning*
+### **Basics of Robots Positioning**
 
 Dorna TA is a 6-axis robotic arm, meaning that counting from the robot’s base up to the end effector (the connected tool at the end of the robot) there are a total of 6 motors each of which rotates one of the 6 joints of the robots (excluding rail or the end effector’s motion actuators). This high number of degrees of control results in a wide range of possible motions and poses of the robotic arm. 
 
@@ -59,7 +59,7 @@ Now, in the images below you can find out what it looks like if each of the join
 
 As you can see above rotating the first joints has a much greater impact on the  robot’s overall orientation and position, the effect decreases for the next joints. 
 
-### *Dorna Robot's Posing*
+### **Dorna Robot's Posing**
 Now it’s time to test the theories you’ve learned by now on the robots present at your lab. To do so, you should start by turning the robot on and connecting it to the computer with the help of your instructor and referring to the robot’s user manual.
 
 Connecting the controller to the computer lets you use the Dorna Lab and Dorna API to observe the robot's state and control/program the robot by sending all kinds of commands to it.
@@ -82,14 +82,14 @@ One needs to have access to the precise values of the current joint values of th
 
 On the other hand, you’ll need to change the robot’s joint values or “pose”. Dorna lab gives you different options for changing the robot's pose, here we will learn about some of the most important ones.
 
-#### *✋Posing by Hand*
+#### ✋**Posing by Hand**
 Turn the motors off, using the “Motors” button in the right panel. This will turn off the magnetic force of all the robot's motors that hold each joint in position. Now since there is no blocking torque in the motors, it becomes reactive to any external force acting on it (keep in mind that gravity is always hard at work!) You’ll be able to move around the robot freely by hand, afterward, turning the motors on again will fix the robot in the new position. You may need a friend’s hand to turn the motors on/off while you’re holding the robot in your desired position. This procedure may also be called, hand training the robot. 
 
 | ![](./images/fig12.jpg) | 
 |:--:| 
 | *The "Motors" button is used to turn the motors on/off* |
 
-#### *🏃‍♀️Posing by Jogging*
+#### 🏃‍♀️**Posing by Jogging**
 This option helps you move the robot incrementally over time, this helps you to find the proper position using trial and error. 
 
 | ![](./images/fig13.jpg) | 
@@ -121,7 +121,7 @@ If you’re using a gamepad/joystick, use the link there to test your input devi
 
 After setting your values, for example for the “Jog Joint” buttons, head back to the jog section, click on the Jog Joint tab (it won’t work if you are not in that tab), and use your input to test the robot jogging. 
 
-#### *📜Posing By Commands*
+#### 📜**Posing By Commands**
 The final and most important method is to send a motion command for the robot and expect the robot to get into our desired configuration when the motion has ended. Here’s how you can do this. 
 | ![](./images/fig17.jpg) | 
 |:--:| 
@@ -143,7 +143,7 @@ Try this on the robot, test with different values of J1 and J2.
 Use any methods introduced above to set the pose of the robot for approaching this problem. Guess what the answer could be, then test your answers by posing the robot.
 </div>
 
-### *Joint Limits*
+### **Joint Limits**
 in every robotic system, there is no total freedom in the rotation of each joint. There are different possible limitations causes for joint movements:
 
 
@@ -154,7 +154,7 @@ in every robotic system, there is no total freedom in the rotation of each joint
 
 - **External limitations**: This limitation exists because of the environment and object placements in the robot’s working place. For example, a rigid wall may be behind the robot so you don’t want the robot J0 to go past the ```(-90, 90)``` range. These special limitations should be taken care of by the user for their specific case.
 
-### *Spatial (Cartesian) Representation*
+### **Spatial (Cartesian) Representation**
 Using the 6 joint values to represent the state of the robot is the most exact and straightforward possible way. As long as you smoothly change the joint values, the robot also responds smoothly. You exactly know which joints are going to change in each motion command, and how much each.
 
 But in many real-world scenarios, it is hard to translate this 6-valued vector J, to parameters you need to quantify the desired robot motion.
@@ -185,7 +185,7 @@ For measuring the XYZ values we’ll use the millimeter (mm) units, which is in 
 
 The forward kinematic function has a unique solution, when you choose the values for joints, the XYZ values are definite. But the opposite is not true, as you can see in the figure above, each XYZ value corresponds to multiple solutions in the joint space via the inverse kinematic function, this means that there are different joint value states for the robot that correspond to exact XYZ values. This degeneracy that will appear when we use the inverse kinematic function opens the door to a lot of interesting possibilities.
 
-#### *Orientation of Approach*
+#### **Orientation of Approach**
 Choosing the 3 degrees of the end effector’s position XYZ values is not our only freedom while working with the 6-axis robotic arm. We can also approach the desired XYZ point with infinitely many possible orientations of approach.
 
 | ![](./images/fig22.jpg) | 
@@ -265,7 +265,7 @@ Please note that the Flange’s Z axis is perpendicular to the surface of the ro
 
 </div>
 
-#### *Axis Angles*
+#### **Axis Angles**
 Assigning a 3D coordinate frame to the end effector of the robot is the first step for quantifying the robot’s rotation. This frame has its own X, Y, and Z axes that may or may not be parallel to the world frame axes.
 
 | ![](./images/fig27.jpg) | 
@@ -312,7 +312,7 @@ In the figures below, we intend to apply a rotation to the CF in (1) to achieve 
 </table>
 </div>
 
-#### *IK Solutions Classifications*
+#### **IK Solutions Classifications**
 As mentioned before, The function that takes ```(x, y, z, a, b, c)``` and gives us the corresponding joint values ```(J0, J1, J2, J3, J4, J5)``` is called the inverse kinematic or IK in short. Most of the control systems in robotics are automatically capable of performing IK in real-time, and so is Dorna-TA’s control system. The user is free to use any representation for the robot state, and the robot will perform mathematical calculations needed to translate different representations to each other.
 
 An interesting feature of IK is that it usually has multiple solutions. A specified ```(x, y, z, a, b, c)``` value corresponds to 0 or 1 or even more than one joint value. Sometimes there are up to 8 different solutions!
@@ -375,7 +375,7 @@ Check if all these joint values have the same XYZ values, and discuss how you ca
 </div>
 
 
-#### *TCP*
+#### **TCP**
 No practical job given to an industrial robotic arm can be carried out without a proper tool attached. A tool usually has static and dynamic parts, that come on top of the robotic arm’s geometry. When the tool is connected to the robot, the **Flange** frame becomes unimportant, and the **Tool** frame becomes the frame that needs to be controlled. 
 
 For example, when a gripper is connected to the robot and you intend to give a pick and place task to the robot, the position of the **Flange** frame is unusable, you have to align the robot’s TCP with the object you want to pick up. 
@@ -408,11 +408,11 @@ Jerk is the rate of changes in acceleration over time, its measuring unit is the
 
 </div>
 
-### *Motion Parameters*
+### **Motion Parameters**
 
 We’ll now take a look at the parameters that describe a motion and their roles:
 
-#### *Start/End Points*
+#### **Start/End Points**
 
 To command the robot to perform a motion you’ll have to send a message containing the instruction from which the robot could calculate the resulting/final state of that motion. It’s not necessary to submit the initial state of the motion for each motion command, because presumably, the initial point of each motion, is the robot’s state when that motion is going to be performed. After all, it’s only the goal that matters, and the initial point of the next motion was determined as the end point of the last motion command.
 
@@ -428,7 +428,7 @@ It is possible to miss some of the joint values in a command. It means that the 
 ```
 Again, missing any values, means that value should stay constant. Note that you should only use joint labels or Cartesian labels, It is not possible to use both of them at once.
 
-#### *Motion Types*
+#### **Motion Types**
 Now that the initial and endpoints of the motion are determined, the controller will calculate the nearest path between these two points and guide the robot along that path over a specified amount of time. We know that the nearest path between any two points is the straight line between those two points, but here is a problem: a straight line in joints-space ≠ a straight line in XYZ  space.
 
 This odd problem has a deep consequence in the world of robotics, it always matters to choose between these two spaces to perform a straight motion. Users should have the freedom to choose between these two cases. They are free to choose initial/endpoints using any representation, but when it comes to connecting these two points, they have to specify the space.
@@ -484,7 +484,7 @@ In the picture above, the robot traverses the circle anti-clockwise to go throug
 
 The command for a circle move should assign ```"cmove"``` to the ```"cmd"``` key.
 
-#### *Relative/Absolute Motion*
+#### **Relative/Absolute Motion**
 
 Until now you’ve only learned about the absolute motions, motions in which you acquire the absolute position of the end point in XYZ or joint space. On the other hand, the relative motion treats your input x, y, z, a, b, c, or joint values j0, j1, j2, ... as the amount of increment you want these parameters to take starting from their current value. 
 
@@ -495,7 +495,7 @@ The ```"rel"``` label has a default value of zero. If you don’t commit ```"rel
 ```
 results in the value of 90 for j0. The missing values again stay unchanged.
 
-#### *Dynamic Properties of Motion*
+#### **Dynamic Properties of Motion**
 Velocity, acceleration, and jerk are the three dynamic properties of the motion that we defined before. Each one of these values can be assigned for a motion command, using proper labels. 
 
 - ```vel``` : For velocity
@@ -538,7 +538,7 @@ Usually, choosing the right/optimal value is done by trial and error. The optima
 </tr>
 </table>
 
-#### *Continuous Motion*
+#### **Continuous Motion**
 
 In many applications, you might need to create a continuous transition from one motion to another motion without a full stop at the end of each motion. Dorna motion planner makes it possible with a feature called continuous motion.
 
@@ -561,7 +561,7 @@ Since by physics laws, it is impossible to traverse two lines that are not colli
 To make the corners traverse smoother, reduce the maximum velocity (vel) of the motion and increase the ```corner``` parameter. A larger corner radius or smaller velocity will make smoother corner traverses.
 
 
-## *Accuracy and Precision*
+## **Accuracy and Precision**
 
 Accuracy and precision are important concepts in the field of industrial robotics, that are crucial to the performance and reliability of robotic systems. Both terms, while often used interchangeably in everyday language, have distinct meanings in engineering and robotics.
 

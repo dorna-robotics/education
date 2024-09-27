@@ -103,7 +103,7 @@ There are also 2 ground pins and 2 pins with constant 24V output available on th
 
 Now let’s dive into more details about the difference between the different types of I/O ports.
 
-### *Digital Signals*
+### **Digital Signals**
 
 Digital I/O signals play a crucial role in interfacing with external devices and sensors. Digital inputs are used to read signals from external devices or sensors that provide binary information meaning that the input values can only have 2 states, on-off, or active-inactive, or 1-0.  For example limit switches, proximity sensors, and push buttons. The controller interprets the state (high or low voltage) of these inputs to determine the operational status or to trigger specific actions within the robotic system.
 
@@ -111,7 +111,7 @@ On the other hand digital outputs are used to send binary signals (0 or 1) to ex
 
 This binary communication simplifies interfacing and control tasks, making it straightforward for the robotic system to interact with its environment.
 
-### *PWM Signals*
+### **PWM Signals**
 
 The PWM (Pulse-Width Modulation) is a signal that oscillates in time, with a rectangular shape with controllable width and duration of the pulse. By controlling these quantities we can alter the mean value of the power delivered. An example of the use cases of this type of control that is relevant to our study of industrial robotics is controlling a DC motor.
 
@@ -140,11 +140,11 @@ Keep in mind that while this method of control of DC motor, gives you precise co
 | *A typical DC motor that can be controlled using the PWM output* |
 
 
-### *I/O Wiring*
+### **I/O Wiring**
 
 Here we will explore some common wiring strategies for input and output systems. Wiring schemes vary based on the type of device we wish the controller to interact with, whether that device supplies its own electrical power or consumes it from the controller, and also other components. Let’s explore some frequent scenarios in automation applications.
 
-### **Input**: *Button*
+### **Input: Button**
 We can use buttons, as a basic and fast way for sending inputs to the controller. The most notable use case for an input button is the emergency button. We discussed the emergency button’s importance as a safety feature in the first chapter. It can be used to quickly halt all robot motion in emergency scenarios. But you can also program a button to ignite all sorts of action from the robot.
 
 A button is usually a simple electrical device that consumes no electrical power, and only uses the user’s mechanical push to connect/disconnect an electrical connection. Since we need a voltage above 12V to communicate a “1” value to an input pin, and the button itself can not supply this voltage, we can use one of the 24V pins on the controller to achieve our goal. This simple design is depicted below.
@@ -166,7 +166,7 @@ The goal of this exercise is to set up a button as a simple input device.
 
 </div>
 
-### **Input**: *Another Device’s Digital Output*
+### **Input: Another Device’s Digital Output**
 
 
 There may be input system devices, such as some sensors and PLC devices, that can supply their own voltage difference, these devices only need to connect to the “Ground” pin and the intended input pin so they create the 24V voltage difference between these two pins, whenever there was an input signal. 
@@ -193,7 +193,7 @@ This exercise’s goal is to connect one of the controller’s outputs to one of
 **Step 2**: Using the connection above, which output is connected to which input? Test it with the Dorna Lab’s I/O panel. Set the output value to 0 and 1 and read the corresponding input values (refer to later on this chapter on how to set the output values using Dorna lab).
 </div>
 
-### **Output**: *Controlling Electrical Load*
+### **Output: Controlling Electrical Load**
 As for the output systems, a commonly used feature of the controller is to supply a maximum of 2 Watts of power (load) to activate a consuming system. 
 
 The figure below shows how a load is controlled by Digital outputs when connected. The load could be a small DC motor or an LED light.
@@ -216,7 +216,7 @@ As shown in the figure above, connect the the motor’s colored wires to the out
 
 </div>
 
-### **Output**: *Digital Output Pin to a Relay*
+### **Output: Digital Output Pin to a Relay**
 
 In many scenarios, the user would like to control a high-power load, such as an actuator, or electric magnet, with a digital output pin using a relay circuit. 
 
@@ -379,7 +379,7 @@ In this exercise, we wish to set up a simple control mechanism for the robot usi
 The step-by-step code for this exercise is available in [this notebook](./codes/LE5.ipynb).
 </div>
 
-### *Probe System*
+### **Probe System**
 
 Another usual form of incorporating input values into the robot’s programming is waiting for an input value to occur using  the ```“probe”``` system in Dorna API. In many scenarios, you may need to hold all the robot’s actions waiting for a specific input event. 
 

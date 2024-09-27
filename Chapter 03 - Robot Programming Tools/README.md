@@ -9,7 +9,7 @@ You don’t need to master complex algorithms, and data structures, or write hig
 
 Programming an industrial robotic system requires understanding several fundamental programming concepts. These concepts/structures are essential for automating tasks, coordinating movements, and managing the robot's interactions with its environment. Here are some key concepts that are crucial for programming industrial robots:
     
-### *Sequential Operations*
+### **Sequential Operations**
 Sequential operations are step-by-step Instructions, is to program the robot to perform a series of actions in a specific order (e.g., move to a position → pick up an object → move to another position → place the object). This is the most straightforward, and simple structure possible in robot programming, without any logic and complexity, everything is predetermined and pre-decided. 
 
 
@@ -17,13 +17,13 @@ Sequential operations are step-by-step Instructions, is to program the robot to 
 |:--:| 
 | *Sequential operations, simple and straightforward* |
 
-### *Conditional Statements*
+### **Conditional Statements**
 Conditionals or If/Else statements are fundamental control flow structures in programming that allow a robot (or any program) to make decisions based on certain conditions (e.g., if an object is detected, pick it up; else, continue scanning). 
 | ![](./images/fig2.jpg) | 
 |:--:| 
 | *Conditional expressions, let the robot decide between different branches based on the inputs* |
 
-### *Loops*
+### **Loops**
 Loops let us repeat processes, it’s useful for all sorts of repetitive tasks, such as inspecting a series of products on a conveyor belt, and the robot performs the same set of actions for each item.
 
 There are two commonly used kinds of loops:
@@ -35,7 +35,7 @@ There are two commonly used kinds of loops:
 | *Loops lets us repeat an operation until it's necessary* |
 
 
-### *Variables*
+### **Variables**
 Variables are fundamental components in programming. They are used to store data that can be referenced and manipulated by the program. Understanding how to use variables effectively is crucial for developing robotic applications.
 Variables are symbolic names given to data that can hold different values. They act as placeholders for data that your program can use and change as it runs. Variables can store various types of data, such as numbers, strings, arrays, objects, and more.
 
@@ -43,7 +43,7 @@ Variables are symbolic names given to data that can hold different values. They 
 - **Array Variables**: This type of variable, stores multiple values in an indexed collection, which can be useful for handling lists of data.
 - **Object Variables**:  This type of variable, can store complex data structures, including objects with multiple properties and methods, useful for representing more complex entities.
 - 
-### *Timing*
+### **Timing**
 
 Handling timing and wait states in robotic systems is a crucial aspect of programming, ensuring precise synchronization and coordination of tasks. It's important to control time delays between operations and manage the waiting times required for receiving inputs. For instance, consider a scenario where you need to scan barcodes of items in a box using a scanner toolhead attached to the robot. First, you command the robot to move to the correct position for scanning. Then, you instruct the scanner to initiate the scan, but this process typically takes a few seconds to complete. Without implementing appropriate wait times, if the robot moves away too quickly, the barcode scan may not finish successfully, leading to incomplete or inaccurate readings. Proper timing control ensures that each task is completed before moving on to the next, maintaining the system's efficiency and reliability.
 
@@ -352,7 +352,7 @@ One of Blockly's key strengths is its ability to make programming more approacha
 
 Dorna robotic has integrated Blockly in the Dorna lab as one of the main methods for programming the robot. It works on top of Dorna’s Python API, your blocks of code in Blockly first get translated into Python code, then the controller runs the Python codes. You’ll learn to write the Python code needed to interact with a Dorna robot in the next subsection.
 
-### *Getting Started With Blockly*
+### **Getting Started With Blockly**
 Start by selecting the Blockly tab on the tab selection panel,
 
  ![](./images/fig7.jpg) 
@@ -420,13 +420,13 @@ Usually in most cases, you won't need to change the default code structure given
 
 The blocks will run from top to bottom and left to right. You should note that blocks have different kinds of connections:
 
-#### *Top-Bottom Connections*
+#### **Top-Bottom Connections**
 Each block with a top-bottom connection is a single line of code, or a unit of command or logic in your code or it encapsulates some lines, you should fill the main body with a series of these kinds of commands as can be seen below.
  | ![](./images/fig14.jpg) | 
 |:--:| 
 | *Top-bottom connections* |
 
-#### *Left-Right Connections*
+#### **Left-Right Connections**
 These jigsaw-puzzle-like horizontal connections are always used for adding options to our commands and lines of code. These are also called “input” connections because we can use them to give inputs to the functions.
  | ![](./images/fig15.jpg) | 
 |:--:| 
@@ -434,9 +434,9 @@ These jigsaw-puzzle-like horizontal connections are always used for adding optio
 
 Other than connecting blocks in the editor, you can use the input fields or drop-down lists to give numerical inputs and strings of text and select different options in your blocks options.
 
-### *Simple Algorithmic Structures in Blockly*
+### **Simple Algorithmic Structures in Blockly**
 
-#### *Sequential*
+#### **Sequential**
 Starting from the simplest algorithmic structure, we need to know how to ask the robot to perform a series of commands sequentially, without any decision-making. This can be done by attaching the desired commands sequentially from top to bottom.
 
 | ![](./images/fig16.jpg) | 
@@ -445,7 +445,7 @@ Starting from the simplest algorithmic structure, we need to know how to ask the
 
 When the program runs, the command blocks attached in this way will perform their tasks sequentially. 
 
-#### *If/Else Statements*
+#### **If/Else Statements**
 Next, we need to create an if/else structure and logical operations. Use the “Logic” subtree in the “General” section of the toolbox.  Use the If block to create if/else statements easily.
 
 | ![](./images/fig17.jpg) | 
@@ -488,7 +488,7 @@ The last block in the Logic subtree is a small if/else statement that is used to
 |:--:| 
 | *Inline conditions* |
 
-#### *Loops*
+#### **Loops**
 The next important subsection in the toolbox is dedicated to loops, “for” loops, and “while” loops.  As we discussed before, loop structure iterates over tasks, and thus can be extremely useful in robotic programming. Let us explore these blocks.
 
 | ![](./images/fig24.jpg) | 
@@ -542,7 +542,7 @@ In the figure above, generated using the code blocks before it, determines the o
 </div>
 
 
-#### *Variables*
+#### **Variables**
 Next up are the variables. Variables let you store values, lists, and all sorts of objects in order to access and use them later. Go to the subtree “Variables” and click on the “Create variable” button to create a new variable. You’ll have to set a unique name for your variable (which can be changed whenever you want).
 
 When you’ve created at least one variable, the “Variables” subtree gives you a block with your variable name on it, so you can use your variable as input for other blocks. There is a “Set variable” block so that you can initialize or change the value of your variable.
@@ -615,11 +615,11 @@ There are many other useful blocks in the “Main” section of the toolbox. The
 
 The “Math” subtree is crucial for robot programming. It contains many blocks to perform all sorts of mathematical operations on the numbers. It also contains blocks that generate “random” numbers for you. 
 
-### *Robot Command Blocks*
+### **Robot Command Blocks**
 
 When working with Blockly, the robot is considered ready-to-use waiting for your instructions and commands to move around and interact with the world and gather data via the input devices. The Blockly in Dornal Lab has all the commands needed to interact with the robot. You can access these blocks in the “Dorna” section of the toolbox. 
 
-#### *Basic Structure*
+#### **Basic Structure**
 All the robot blocks have almost the same structure as below
 
 | ![](./images/fig41.jpg) | 
@@ -634,7 +634,7 @@ The input ports of the Dorna blocks should be filled with a ```"key" =``` block 
 
 In the “Move” subtree you can find blocks that are related to motion commands. These blocks have a record button 📍 on them. Clicking this button fills the input fields of that block with the robot’s current joint and Cartesian values. This can be a lot helpful in the process of hand-training the robot. Turn off the robot’s motor, and bring it to your desired position, create a motion block and click on the record button, and then you have a command that will bring the robot to that desired position. 
 
-#### *Timing*
+#### **Timing**
 You’ve now learned to create basic algorithmic structures and to send robot commands in this way. A crucial feature that you should look for in the robotic programming tools, as was discussed before, is time control options, for programming the delays.
 
 To help you easily plan the robot’s wait between commands, all the robot’s commands in Blockly (and the Python API) accept a “Timeout” input. This is how this key help you with timing:
@@ -767,12 +767,12 @@ else:
 
 The role of this object is to bring us all sorts of functions and methods to interact with the robot. As explained in the code above, your interaction with the robot happens after you are sure about the proper connection with the robot, and also after the interactions are all done it is a good practice to close the connections using ```robot.close()```.
 
-### *Dorna Python API’s Methods*
+### **Dorna Python API’s Methods**
 Here we will review the Dorna module’s methods. The “connect” and “close” methods have already been discussed. Other methods that come next are used to send command messages, ask for information from the robot, read, wait for inputs, read the latest updates on any values, and change the outputs.
 
 Here we will list and review these methods:
 
-#### *Cmd Methods*
+#### **Cmd Methods**
 Methods that help us access the history of all the commands and messages exchanged with the robot
 
 - ```last_cmd()```: Return the last command sent to the robot, in a Python dictionary format.
@@ -783,7 +783,7 @@ Methods that help us access the history of all the commands and messages exchang
 
 These methods form a very useful set of ways for reading all the robot values e.g. robot’s joint value, position, rotation, input, and output value. You just need to look them up using their specific key: ```val(key=”j0”)``` returns the last communicated value of the robot’s j0. Having access to real-time values of robot’s parameters is crucial for creating reliable robotic applications.
 
-#### *Play Methods*
+#### **Play Methods**
 The play commands are simply methods for sending one or multiple commands to the robot for execution. You’re already familiar with most of the robot’s commands and their JSON structure of “key”s and values. Here you'll see how it's possible to send commands using Python code.
 
 There are many versions of the "Play" function, to decide which one to choose, you have to look at how you’ve prepared the commands' data to commit.
@@ -835,7 +835,7 @@ Remember that the “cmds.txt” is a relative file address, you have to manage 
 </tr>
 </table>
 
-#### *Move Methods*
+#### **Move Methods**
 You have the freedom of of sending your movement commands through the  “Play” methods, or to use the exclusive movement methods available:
 - ```jmove()```: This method is basically similar to the ```play()``` method but the ```cmd``` key is set to ```"jmove"```. So, ```jmove(rel=1, j0=10, id=10)``` is equivalent to ```play(cmd='jmove', rel=1, j0=10, id=10)```.
 
@@ -843,7 +843,7 @@ You have the freedom of of sending your movement commands through the  “Play�
 
 - ```cmove()```: A helper function to send a circle move (cmove) command.
 
-#### *Stop and Alarm Methods*
+#### **Stop and Alarm Methods**
 These are a series of helper functions to send stop (halt) commands and read and set the alarm status of the robot. Again it must be noted that all of these tasks could also be done using “Play” methods.
 
 - ```halt(accel)```: A helper function to send a halt command to the robot, with a given acceleration factor (```accel```), and returns the final status of the halt command (```stat```).
@@ -852,7 +852,7 @@ These are a series of helper functions to send stop (halt) commands and read and
 
 - ```set_alarm(enable)```: Enable or disable the alarm status of the robot (set enable to 0 for disabling and 1 for enabling the alarm), and return the final status of the command (```stat```).
 
-#### *Joints Methods*
+#### **Joints Methods**
 Here are commands for getting/setting joint values and TCP
 
 - ```get_all_joint()```: Get the joint values of the robot, in a list of size 8. Where index i in the list is the value of i'th joint.
@@ -869,7 +869,7 @@ Here are commands for getting/setting joint values and TCP
 
 - ```set_motor(enable)```: Enable or disable the motors and return the final status of the motor command (stat) sent to the robot.
 
-#### *Wait and Delay Methods*
+#### **Wait and Delay Methods**
 Methods concerning waiting for an input pin pattern, encoder indices, or delay for a certain amount of time in the program.
 
 - ```probe(index, val)```:  Return the joint values of the robot in a list of size 8 (```get_all_joint()```), the moment that the input pin index (```0 <= int < 16```), is equal to the ```val``` (0 or 1). We can use this method to wait for a pattern of inputs.
@@ -878,7 +878,7 @@ Methods concerning waiting for an input pin pattern, encoder indices, or delay f
 
 - ```sleep(val)```: Sleep for val (```float >= 0```) seconds and return the status of the command.
 
-#### *Event Methods*
+#### **Event Methods**
 In robotics programming, efficiently managing the flow of tasks and responses to various triggers is crucial. Traditional programming methods, such as using simple loops to constantly monitor conditions, can be inefficient and lead to performance bottlenecks. These challenges arise because, without a structured event system, the program may waste CPU resources, or worse, miss critical events due to timing issues. This is where implementing an event-driven system offers a more refined and effective solution.
 
 Let’s take a look at a real-life scenario. There is a wall located at the position  ```y=100```, and you are running a complex code on the robot that may stop executing for seconds waiting for the robot to perform a task. You are looking for a solution to stop the robot whenever it  is near the wall: ```y>90``` to avoid colliding with the wall, and you are worried if the robot surpasses this threshold while a motion command is running and the execution of the program is un-hold. 
@@ -914,7 +914,7 @@ Some other useful functions regarding the events are also:
 - ```clear_all_event()```: Removes all the events from the event list.
 
 
-#### *Input/Output and Auxiliary Axis Methods*
+#### **Input/Output and Auxiliary Axis Methods**
 We postpone a detailed overview of the Input/output methods and Auxiliary axes methods to their corresponding chapters.
 
 <div style="border: 1px solid black; padding: 10px; background-color: #c8e3c3;">
@@ -932,7 +932,7 @@ The step-by-step solution to this problem is available in [this notebook](./code
 
 </div>
 
-### *Startup Program*
+### **Startup Program**
 When designing an industrial robotic system, consisting of the robot and the controller, the robot may need to perform the same task over and over for days, from the time it has been powered on until the time it has been turned off. 
 
  In order to simplify this task, Dorna TA gives you the option to select a “Startup Program”, the address of a Python code saved inside the controller, that you wish to be executed each time the robot has been powered on. 
