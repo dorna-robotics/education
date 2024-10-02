@@ -22,7 +22,7 @@ The Joint values: J0, J1,... are all measured in the units of degrees, usually b
 
 | ![](./images/fig1.png) | 
 |:--:| 
-| *Joint values on a unit circle, note that there is an ambiguity where 180° aligns with -180°, but usually in the cases we are dealing with this value for joints is inaccessible from both directions.* |
+| *Joint values on a unit circle, note that there is an ambiguity where 180° aligns with -180°, but usually in the cases we are dealing with this value for joints is inaccessible from both directions* |
 
 
 The zero state in which all the joint values are zero, ```(0, 0, 0, 0, 0, 0)``` can be seen below for the Dorna TA:
