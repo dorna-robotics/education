@@ -478,7 +478,7 @@ So the circle move is created using three points, instead of two, which are star
 
 | ![](./images/fig42.jpg) | 
 |:--:| 
-| *Using the start, middle, and end points, all the properties of the ```cmove``` path is determined. * |
+| *Using the start, middle, and end points, all the properties of the ```cmove``` path is determined* |
 
 In the picture above, the robot traverses the circle anti-clockwise to go through the mid point during the motion. After reaching the endpoint for the first time the robot performs ```"turn"``` numbers of full circle turns before finishing the ```cmove```.
 

@@ -202,7 +202,7 @@ Note that In a closed-loop application, it is important to set signs of ```tprm`
 
 (```usem``` = 0, ```usee``` = 0)
 
-Both motor and encoder are missing. In this case, the robot reports the value of the joint as 0. Of course this scenario has no practical use case.
+Both the motor and encoder are missing. In this case, the robot reports the value of the joint as 0. Of course, this scenario has no practical use case.
 
 
 
