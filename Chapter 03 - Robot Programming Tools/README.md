@@ -4,13 +4,13 @@
 
 Programming is the language that brings robotic systems to life, enabling them to perform complex tasks. In robotics, programming acts as the bridge between the mechanical components of a robot and the desired behaviors that make it useful in real-world applications. It provides the logic and decision-making capabilities necessary for a robot to interact with its environment, respond to changes, and execute tasks autonomously. 
 
-You don’t need to master complex algorithms, and data structures, or write highly efficient code to program a robotic system. In fact, you don’t even need to be a professional programmer. Tools like Blockly offer a user-friendly graphical interface that allows you to create simple algorithmic structures for performing industrial tasks. Python, with its intuitive syntax and readability, provides a powerful yet accessible way to program robots, bridging the gap between beginners and professionals. Its resemblance to natural language makes it easy to learn and use, while its versatility and extensive libraries make it suitable for a wide range of robotic applications, from basic automation to advanced AI integration.
+You don’t need to master complex algorithms, and data structures, or write highly efficient code to program a robotic system. In fact, you don’t even need to be a professional programmer. Tools like Blockly offer a user-friendly graphical interface that allows you to create simple algorithmic structures for performing industrial tasks. Python, with its intuitive syntax and readability, provides a powerful yet accessible way to program robots, bridging the gap between beginners and professionals. Its resemblance to natural language makes it easy to learn and use. In contrast, its versatility and extensive libraries make it suitable for a wide range of robotic applications, from basic automation to advanced AI integration.
 
 
 Programming an industrial robotic system requires understanding several fundamental programming concepts. These concepts/structures are essential for automating tasks, coordinating movements, and managing the robot's interactions with its environment. Here are some key concepts that are crucial for programming industrial robots:
     
 ### **Sequential Operations**
-Sequential operations are step-by-step Instructions, is to program the robot to perform a series of actions in a specific order (e.g., move to a position → pick up an object → move to another position → place the object). This is the most straightforward, and simple structure possible in robot programming, without any logic and complexity, everything is predetermined and pre-decided. 
+Sequential operations are step-by-step Instructions, which program the robot to perform a series of actions in a specific order (e.g., move to a position → pick up an object → move to another position → place the object). This is the most straightforward, and simple structure possible in robot programming, without any logic and complexity, everything is predetermined and pre-decided. 
 
 
 | ![](./images/fig1.jpg) | 
@@ -839,12 +839,50 @@ Remember that the “cmds.txt” is a relative file address, you have to manage 
 You have the freedom of of sending your movement commands through the  “Play” methods, or to use the exclusive movement methods available:
 - ```jmove()```: This method is basically similar to the ```play()``` method but the ```cmd``` key is set to ```"jmove"```. So, ```jmove(rel=1, j0=10, id=10)``` is equivalent to ```play(cmd='jmove', rel=1, j0=10, id=10)```.
 
-- ```lmove()```: A helper function to send a line move (lmove) command.
+- ```lmove()```: A helper function to send a line move (```lmove```) command.
 
-- ```cmove()```: A helper function to send a circle move (cmove) command.
+- ```cmove()```: A helper function to send a circle move (```cmove```) command.
+
+#### **Pick and Place Method**
+Picking and Placing objects is one of the most widely used motion planning patterns in industrial robotic settings. It's a rather complicated pattern consisting of more than 8 individual robot commands, thus it would be time-saving to have a method that plans this complicated motion for us. 
+
+- ```pick_n_place(pick_pose, place_pose, tcp, output_config, above, sleep,  motion, speed)```: A function that creates and sends all the commands necessary to perform a pick and place operation. Before reviewing some of the input parameters needed for this function, let's take a look at how the pick and place operation works in more detail.
+
+We can break up the pick-and-place process into these steps:
+- *(0)*: The robot is at its initial position.
+- *(1)*: The robot moves to a position on top of the object. The gripper's jaw should be open until now.
+- *(2)*: The robot moves to the object's position, meaning that the tool (TCP) aligns with the position and orientation of the object. The gripper closes now, gripping the object.
+- *(3)*: The robot, now holding the object, returns to its position in step *(1)*.
+- *(4)*: Now the robot, while traveling toward the destination point, reaches the "middle" point (if it has been specified).
+- *(5)*: The robot gets on top of the point we want to place the object.
+- *(6)*: The robot approaches the placing position, the gripper jaws open and the object is released.
+- *(7)*: We turn back to the position at step *(5)*.
+- *(8)*: The robot, which has now accomplished its job, goes to the end position.
+
+Note that, going on top of the picking and placing positions before and after gripping and releasing the object, is necessary for approaching the object properly, otherwise the gripper jaws may collide with the object. Also going to a middle point between the pick and place points gives us the option to plan this long-range motion with more detail, avoiding colliding with possible obstacles.
+
+Now for the input parameters:
+
+- ```pick_pose```, ```place_pose``` (and also maybe ```middle_pos``` and ```end_pos```): assigns the pick and placing position of the object using the ```xyzabc``` values in an array of 6 values.
+  
+- ```tcp```: the pick-and-place operation always needs a toolhead, so we can specify the tcp frame (Tool frame with respect to the Flange) using the ```xyzabc``` representation in an array.
+  
+- ```output_config```: Is an array of three numbers of the form, ```[output_index, off_state, on_state]```. Here you should specify which output index controls the gripper, what output value corresponds to the gripper's open state (0 or 1), and what output value corresponds to the gripper's close state (0 or 1), respectively. For example ```[6,0,1]```. We will learn about the robot's output channels and its value in the upcoming chapters.
+
+- ```above```: This parameter, measured in the mm units, indicates how much we want to get above the pick and place positions before approaching. This value controls the position of the *(1)* and *(5)* positions. Please also keep in mind that, "above" pick and place positions are in the z direction of the pick and place poses.
+
+- ```sleep```: A number in the unit of second, that indicates how much the robot should wait after the "gripping" and "releasing" commands are sent and before moving away from pick and place positions, to be sure that the gripping and releasing are properly done.
+
+- ```motion```: Indicates the type of motion we want to use, for example ```"jmove"``` or ```"lmove"```.
+
+- ```speed```: A number between 0 and 1 that measures how fast we want the motions of the pick and place operation to be performed.
+
+| ![](./images/t1.gif) | 
+|:--:| 
+| *Pick and place* |
 
 #### **Stop and Alarm Methods**
-These are a series of helper functions to send stop (halt) commands and read and set the alarm status of the robot. Again it must be noted that all of these tasks could also be done using “Play” methods.
+These are a series of helper functions that send stop (halt) commands and read and set the robot's alarm status. Again it must be noted that all of these tasks could also be done using “Play” methods.
 
 - ```halt(accel)```: A helper function to send a halt command to the robot, with a given acceleration factor (```accel```), and returns the final status of the halt command (```stat```).
 
@@ -895,9 +933,9 @@ The methods that let you do this are as follows:
 The target function always starts with two required parameters, msg, and union. Other necessary parameters can also be passed via ```**kwargs```.
 
 ```python
-def target(msg, union, **kwargs){
-	// Do something each time a message arrives
-}
+def target(msg, union, **kwargs):
+	#Do something each time a message arrives
+
 ```
 Here:
 - ```msg``` is the message received from the controller when the target was called (last_msg()).
@@ -943,7 +981,7 @@ To select your startup program, write your Python code in the Python tab of the 
 |:--:| 
 | *Startup programs setting in Dorna lab* |
 
-Enter the full address of the file(s). Click on “Set” button. From now on this code will be executed whenever the controller is turned on.
+Enter the full address of the file(s). Click on the “Set” button. From now on this code will be executed whenever the controller is turned on.
 
 ---
 ## **Jupyter Notebook**
