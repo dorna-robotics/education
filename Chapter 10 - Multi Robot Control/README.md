@@ -1,4 +1,4 @@
-# **Tic-Tac-Toe Automation**
+# **Project: Tic-Tac-Toe Automation**
 
 ## **Overview**
 This project involves using two Dorna TA robots that communicate with each other to play a game of Tic-Tac-Toe. This introduces students to the exciting world of multi-robot automating by creating a game of Tic-Tac-Toe using two Dorna TA robotic arms. Participants will learn how to assemble the robots, configure their communication through I/O pins, and program their movements to autonomously play the game. By integrating robotics, programming, and real-time communication, students will understand how machines can work collaboratively to complete tasks in a structured environment.
