@@ -1,6 +1,6 @@
 # **7. Vision Basics**
 
-Computer vision is pivotal in programming industrial robotic systems because it provides robots with the "eyes" needed to interpret and interact with their environment. This technology enables robots to perform highly precise and adaptable tasks, such as quality inspection, object sorting, and assembly operations. By leveraging computer vision, robots can identify and locate objects, assess their orientation, and make real-time decisions, which significantly enhances their efficiency and accuracy in manufacturing processes.
+Computer vision is pivotal in programming industrial robotic systems because it provides robots with the "eyes" to interpret and interact with their environment. This technology enables robots to perform highly precise and adaptable tasks like quality inspection, object sorting, and assembly operations. By leveraging computer vision, robots can identify and locate objects, assess their orientation, and make real-time decisions, significantly enhancing their efficiency and accuracy in manufacturing processes.
 
 Traditional robotic systems often rely on pre-defined paths and operations, limiting their adaptability to changes in the production line. In contrast, robots equipped with computer vision can dynamically adjust their actions based on visual feedback, allowing them to handle a variety of tasks and adapt to new or unexpected situations. This capability is crucial for modern manufacturing environments that demand high levels of customization and rapid production changes. By integrating computer vision, industrial robots have become more versatile, capable, and essential for the future of automated manufacturing.
 In this section, we will review the fundamental concepts of computer vision that will help us add basic vision and detection features to our robot programming toolbox. This chapter will benefit from the well-known detection library OpenCV for its goal. The Dorna robotics also features simple tools, that let you use the OpenCV features more easily for your robotic application.
@@ -9,7 +9,7 @@ In this section, we will review the fundamental concepts of computer vision that
 
 ## **Fundamental Concepts of Vision in Robotics**
 
-The ultimate goal of using vision systems in robotics is to convert the information stored in captured images of the robot’s surroundings into three-dimensional data about objects. This transformation enables us to plan the robot's movements and interactions with these objects. In many real-world scenarios, the state of the environment is not entirely deterministic, so we need to continually update our information about the surroundings. Utilizing cameras and vision systems is the most versatile and effective way to achieve this dynamic understanding.
+The ultimate goal of using vision systems in robotics is to convert the information stored in captured images of the robot’s surroundings into three-dimensional data about objects. This transformation enables us to plan the robot's movements and interactions with these objects. In many real-world scenarios, the state of the environment is not entirely deterministic, so we need to update our information about the surroundings continually. Utilizing cameras and vision systems is the most versatile and effective way to achieve this dynamic understanding.
 
 Basic vision methods, such as those implemented in the OpenCV library, rely on detecting patterns in images and subsequently extracting spatial data from these patterns. Various detection techniques hinge on identifying specific patterns within the image. For instance, edge detection, feature matching, and contour finding are fundamental processes that allow a vision system to interpret the spatial configuration and characteristics of objects within its field of view. By recognizing these patterns, the system can infer distances, shapes, and orientations, which are crucial for accurate object manipulation and navigation.
 
@@ -65,11 +65,13 @@ The point in the lower right corner of the image is the point with maximum value
 ---
 ## **Detection GUI**
 
-To find the position of the objects in the environment, the application should first automatically detect the presence, the number, and the position of the desired objects relative to the camera frame, based on the input image. The detection part is done mostly based on the input RGB map, but to extract the 3d position information, we usually have to use the depth map. 
+Now it's time to start learning to build a computer vision program which was our primary goal in this chapter. This application should automatically detect the presence, number, and position of the desired objects based on the input image. The detection part is mostly based on the input RGB map, but to extract the 3D position information, we usually have to use the depth map. 
 
-OpenCV performs object detection through a combination of image processing techniques. The process generally involves several key steps. Here we will not go through a detailed review of how OpenCV works, and how an OpenCV workflow should be created because that would take a complete course for itself. Instead, we will learn how to use OpenCV through a prepared graphical user interface to create simple yet useful programs for a wide range of robotic applications. 
+Algorithms such as OpenCV perform object detection through a combination of image-processing techniques. The process generally involves several key steps. Here we will not go through a detailed review of how OpenCV works, and how an OpenCV workflow should be created because that would take a complete course for itself. Instead, we will learn how to use OpenCV through a prepared graphical user interface to create simple yet useful programs for a wide range of robotic applications. 
 
-Now let’s start working with this GUI by first opening the Jupyter environment using Dorna Lab. Then download and navigate the notebook “detection_gui” from the “example” folder of the [“dorna_vision” repository on GitHub](https://github.com/dorna-robotics/dorna_vision). Run the code cell in that notebook so the GUI starts working.
+<span style="color:red">
+Now let’s start working with this GUI by opening the Jupyter environment using Dorna Lab. Then download and navigate the notebook “detection_gui” from the “example” folder of the [“dorna_vision” repository on GitHub](https://github.com/dorna-robotics/dorna_vision). Run the code cell in that notebook so the GUI starts working.
+</span>
 
 Here is the first look at the GUI you’ll encounter with:
 
@@ -77,44 +79,113 @@ Here is the first look at the GUI you’ll encounter with:
 |:--:| 
 | *Detection GUI* |
 
-### **Input and Adjustments**
-You should first select your input source, in our case, it would be the input from the Intel RealSense camera, but you are also able to use a captured image as your input by choosing the option from the “Source” dropdown list. Click on the “Capture” button, so the captured image (shown below the GUI) gets updated.
+### **Initialization**🛠️
+We should start by initializing the GUI system. The parameters here can only be set at the beginning of each session. Here are the different sections of initialization:
+#### **Camera Mounting**
+Here we specify how the camera is mounted, there are two different options:
 
-Note that it’s important to click on the **“Terminate the app”** button when you are finished working with the GUI.
+ |![](./images/fig24.png) | 
+|:--:| 
+| *Eye-to-hand and Eye-in-hand* |
 
-The next step is to perform adjustments on the raw input image before starting to work on detection. These adjustments are going to help the program to perform better detections. So start by clicking on the “Visual adjustment” tab. The options for adjusting the image are as below:
+1. ```Eye-in-hand```: In this case, the camera is mounted on the robot's arm. The position of the detected objects is reported relative to the robot's base, so you have to specify the robot's IP address to be used for calculating the positions.
+   
+2. ```Eye_to_hand```: in this case, the camera is mounted somewhere else, off the robot. The position of the detected objects will be reported with respect to the camera itself, so no information about the robot is needed in this case.
+#### **Frame**
+Here we can specify a frame using the 6 pose numbers: ```xyzabc``` so that the reported position of the detected objects is reported with respect to this frame. The definition of this frame is different in the two cases ```Eye-in-hand``` and ```Eye-to-hand```.
+
+1. ```Eye-in-hand```: In this case, the camera is mounted on the robot and hence has no fixed position in space, so we specify the frame with respect to the robot's base.
+
+For example, take a look at the set-up in the picture below. We have a fixed frame that sits on the corner of a table, and we wish to set up a vision system that reports all the positions with respect to this frame. In this case, we should specify the frame's ```xyzabc``` values with respect to the robot base, and Dorna's detection algorithm will do the rest for us.
+|![](./images/fig23.jpg) | 
+|:--:| 
+| *Camera is in hand, and the frame is on the table's corner* |
+
+2. ```Eye-to-hand```: In this case, since the camera itself is a fixed frame in space, so we should specify the frame's ```xyzabc``` values with respect to the camera itself.
+
+**Note**: It may seem hard for you to find the precise values of the frame's ```xyzabc```  in your robotic setup. But there is an easy way to find them using the vision system itself in both ```Eye-in-hand``` and ```Eye-to-hand``` scenarios. This is how it works: Place an Aruco board on the exact position of your frame, run the vision application with frame ```xyzabc``` value set to zero, and detect the board's pose values. Relaunch the application and this time use the detected board's pose values as the frame's pose values. You'll learn about the Aruco board and how to get its pose values from the detection algorithm in this chapter.  
+
+#### **AI Model**
+The last setting can be used for AI vision models which will be covered in the next chapter.
+
+
+#### **Finishing Up Initialization**
+Click on the ```Initialize Parameters `` button to finish the initialization.
+
+
+### **Image**📷
+The image section of the application gives you options about the input image. You can choose the input source, and you can use some simple image filters to modify the input image, preparing it for the detection algorithm.
+
+#### *Source*
+You can either use your stereo camera as the input image source, or you can use an image file for running tests. Clicking on the "File" option gives you an input field for entering the image file address. For example: ```C:/Users/Dorna/Pictures/image.jpg```. 
+
+Clicking on the <span style="background-color:green; color:white">Capture image</span>  button so the image appears below the GUI. Use this button to always reset the image, either by capturing the real-time camera's input image or by uploading the image file.
 
 #### *Region of Interest*
-Consider this scenario: you are programming a vision system for a conveyor belt in a factory that moves small boxes around. Your goal is to check the boxes passing on the conveyor. However, the camera's field of view includes a lot of unnecessary scenery from the environment. There are parts of the input image that you can confidently delete without causing any errors in the vision process. These are regions where you know the boxes won’t pass.
+Consider this scenario: you are programming a vision system for a conveyor belt that moves small boxes around. Your goal is to check the boxes passing on the conveyor. However, the camera's field of view includes many unnecessary visual details from the environment. There are parts of the input image that you can confidently delete without causing any errors in the vision process. These are regions where you know the boxes won’t ever pass.
 
-In this scenario, masking out these regions is beneficial. First, you reduce the number of pixels your processing unit has to handle for detection. Secondly, by specifying a valid region, you lower the possible risks of erroneous detections from invalid regions.
+In this scenario, masking out the unnecessary regions is beneficial for two reasons: first, it reduces the number of pixels the processing unit has to handle for detection, and second, by specifying a valid region, it decreases the possible risk of erroneous detection from invalid regions.
 
-To specify the region of interest for your application, head to the “Region of Interest” sub-panel, and start drawing the desired polygon on the image below by clicking on it. 
+To specify the region of interest for your application, head to the “Region of Interest” sub-panel, and start drawing the desired polygon on the image below by clicking on it and setting the corners of the region of interest polygon. To reset the polygon use the Esc keyboard button.
 
 |![](./images/fig6.jpg) | 
 |:--:| 
 | *Region of  interest specified using the blue polygon, notice that hovering the mouse on the input image will show you options for interacting with it. The most important ones let you zoom and move the picture around* |
 
-Check the “Apply the ROI” checkbox to make the region of interest active (this option is also present in the other adjustment sub-panel sections and should be checked if we want to use that adjustment feature). You can also invert this region (the region of interest would then be outside the polygon instead of inside it) by checking the “Inver the region” checkbox.
+Check the “Apply ROI” checkbox to make the region of interest option active (this option is also present in the other adjustment sub-panel sections and should be checked if we want to use that adjustment feature). You can also invert this region (the region of interest would be outside the polygon instead of inside it) by activating the “Invert the region” checkbox.
 
 #### **Intensity**
-The options in this section help you change the brightness and contrast of your input image, this may be helpful to enhance the quality of the image, when the light condition is bad, or colors used in the scene are indistinguishable. Play with these options until you achieve a clear and readable image, do not overuse these options on the image, because it will cause artifacts and erroneous detections.
-|![](./images/fig7.jpg) | 
+The options in this section help you change the brightness and contrast of your input image, this may be helpful to enhance the quality of the details in the image, when the light condition is bad, or colors used in the scene are indistinguishable. Play with these options until you achieve a clear and readable image, do not overuse these options on the image, because it will cause a noisy image and erroneous detections. Check the "Apply the intensity" checkbox if you want to use these options.
+|![](./images/fig7.png) | 
 |:--:| 
 | *Setting Contrast and Brightness of the input image, to make the features more visible* |
 
 #### **Color Mask**
-Color masking is a feature similar to the “Region of interest”, in that instead of specifying a region on the image to be masked for the process, you specify a region in the color space for being processed. For example, if the boxes on the conveyor belt are only in blue colors, so there won’t be any reason to process pixels that are any color but blue. So you should mask out any other color. 
-|![](./images/fig8.jpg) | 
+Color masking is a feature similar to the “Region of interest”. Both these features exclude a group of pixels from the image, so the detection algorithm only runs on a specific part of the image. Using the color mask, we include/exclude pixels judging by their “HSV” values, which stand for "Hue”, "Saturation”, and "Vue”.
+
+For example; if there are blue and red boxes on a conveyor and we only want to detect the red boxes, we can exclude the hue value corresponding to the bluish colors so that all the blue pixels are thrown away and blue boxes would never get detected. 
+|![](./images/fig8.png) | 
 |:--:| 
-| *Color masking tool* |
+| *Masking out the green background, using an inverted mask on the green hue region. The black pixels have been excluded.* |
 
-Use the color picker option to first select the main color you want to mask, use the obtained HSV (Hue, Saturation, Vue) values as the center of the HSV mask regions, and expand the lower/upper bound sliders for each value around these center values to obtain your desired masking region in the color space.
+Use the color picker option first to select the main color you want to mask, use the obtained HSV (Hue, Saturation, Vue) values as the center of the HSV mask regions, and expand the lower/upper bound sliders for each value around these center values to obtain your desired masking region in the color space.
 
-The “Invert the mask” button also comes in handy if you want to delete a specific color region from your image.
+The “Invert the mask” button is also useful if you want to delete a specific color region from your image.
 
 ### **Pattern Detection**
 The next panel in the GUI is where we plan for pattern detection. First, we should select the kind of “Pattern” we want to detect in the image that suits our application, and then we need to tune the detection algorithm parameters to make it detect properly. Here we will introduce the pattern categories that this GUI supports, which usually suffice many real-world applications.
+
+#### **Ellipse**
+Ellipse is a commonly used pattern in detection applications. It can help us solve many real-life problems easily. It has a simplistic geometrical structure with only 2 parameters describing its shape (major and minor axis sizes), but at the same time, it can be mapped to a wide range of complex shapes.
+
+This algorithm can be used to find the center position and orientation of a wide class of objects and not necessarily ellipsoidal shapes. 
+
+|![](./images/fig12.jpg) | 
+|:--:| 
+| *Ellipse pattern detection in GUI. The GUI uses the green rectangles to represent the oriented bounding box (OBB) for the detected pattern instances* |
+
+The parameters you can set for this algorithm (```min_path_length```, ```min_line_length```,...), change some of the inner parameters for the OpenCVs ellipse detection algorithm (for example the ```smooth blur``` parameter smooths out the rough edges so shapes with sharp edges will get more chance to be detected as an ellipse). It would be outside of the scope of this course to get into the details of these parameters. The best practice would be to play around with them until you reach the best quality of detection.
+
+
+#### **Polygon**
+
+Polygon detection brings us one step further for detecting more complex patterns.  
+We expect the polygon pattern to have pointy edges and flat sides. Here you can specify the number of sides, and your expected range for the “Area” (in pixel2) and “Perimeter”(in pixels).  Both these values kinda represent the size of the polygon, and the ranges should be tuned carefully so the algorithm does not detect unwanted patterns.
+
+In this section, you have also given options to control one step of the detection workflow right before the actual detection. The actual version of the input image that is being fed to the polygon detection algorithm can be seen on the right-hand side of the panel. As you can see it can be a binary image (each pixel can only take “white” or “black” values), and you have control over the parameters that control how these black/white values are assigned to the pixels. Play around with these options (if needed) to achieve a clear image where the pattern you wish the algorithm to detect is visible and bold. 
+
+|![](./images/fig13.jpg) | 
+|:--:| 
+| *Polygon detection in GUI. The region of interest has also been activated for this example* |
+
+#### **Contour**
+Contour is the most complex achievable pattern in this application, which can cover all possible connected patterns and shapes for us. The contours generality has its pros and cons. The good news is that we can use contour to detect complex structures that could not be modeled properly using polygons or ellipses, but the bad news is that since the contour shape is unlimited it may wrongfully detect patterns we didn’t wish for.
+
+The options in this case are similar to the “Polygon” detection section. You have the “Area” and “Perimeter” options to specify the size range of the contour. 
+
+|![](./images/fig14.jpg) | 
+|:--:| 
+| *Contour detection in GUI used to detect a rather complex object* |
 
 #### **Aruco**
 
@@ -152,41 +223,6 @@ Draw or print the pattern below on a cardboard with each square being the same s
 You have created an Aruco dice! Use the GUI to detect the top side’s value of the dice. Roll around your dice and read the obtained values using the GUI.
 
 </div>
-
-#### **Ellipse**
-Ellipse is a commonly used pattern in detection applications. It can help us solve many real-life problems easily. It has a simplistic geometrical structure with only 2 parameters describing it (major and minor axis sizes), but at the same time, it can be mapped to a wide range of complex shapes. Unlike the Aruco pattern detection, the algorithm is not capable of finding the 3D pose of this pattern, because the apparent elliptic shape may be mapped to a wide range of possible shapes in the 3D world. To find the pose for this pattern (and the patterns afterward), we have to use depth information from our stereo camera.
-
-|![](./images/fig12.jpg) | 
-|:--:| 
-| *Ellipse pattern detection in GUI. The GUI uses the magenta rectangle as the rotated bounding box for the detected shapes and the shape itself is shown using the light green color* |
-
-The two most important parameters controlling the ellipse detection are “Axes range" and "Ratio”:
-
-- **Axes Range**: Determines the range of the values the axes size should be (measured in pixels). For example in the picture above there are many smaller circles or some very large circular patterns that we do not want the algorithm to detect, so we limit the axes range in a way that only the ellipses (or circles) with our desired size are detected.
-
-- **Axes Ratio**: Axes ratio value is defined as the ratio between the ellipses’s smaller axis size to its larger axis size. Hence the axes ratio value must be in the range (0,1). An ellipse with an axes ratio near 1 looks like a perfect circle, and an ellipse with an axes ratio near 0 looks very stretched and thin. You have to also select a proper axes ratio range with which you can limit the algorithm to only detect your desired shapes.
-
-Use other options available for this method only if configuring these two values is not enough for you to perform the detection task properly. We will not go into details of their specific effect on the detection algorithm, you may find out this just by playing around with them.
-
-#### **Polygon**
-
-Polygon detection brings us one step further for detecting more complex patterns.  
-We expect the polygon pattern to have pointy edges and flat sides. Here you can specify the number of sides, and your expected range for the “Area” (in pixel2) and “Perimeter”(in pixels).  Both these values kinda represent the size of the polygon, and the ranges should be tuned carefully so the algorithm does not detect unwanted patterns.
-
-In this section, you have also given options to control one step of the detection workflow right before the actual detection. The actual version of the input image that is being fed to the polygon detection algorithm can be seen on the right-hand side of the panel. As you can see it can be a binary image (each pixel can only take “white” or “black” values), and you have control over the parameters that control how these black/white values are assigned to the pixels. Play around with these options (if needed) to achieve a clear image where the pattern you wish the algorithm to detect is visible and bold. 
-
-|![](./images/fig13.jpg) | 
-|:--:| 
-| *Polygon detection in GUI. The region of interest has also been activated for this example* |
-
-#### **Contour**
-Contour is the most complex achievable pattern in this application, which can cover all possible connected patterns and shapes for us. The contours generality has its pros and cons. The good news is that we can use contour to detect complex structures that could not be modeled properly using polygons or ellipses, but the bad news is that since the contour shape is unlimited it may wrongfully detect patterns we didn’t wish for.
-
-The options in this case are similar to the “Polygon” detection section. You have the “Area” and “Perimeter” options to specify the size range of the contour. 
-
-|![](./images/fig14.jpg) | 
-|:--:| 
-| *Contour detection in GUI used to detect a rather complex object* |
 
 
 ### **6D Pose**
