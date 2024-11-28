@@ -2,8 +2,8 @@
 
 Computer vision is pivotal in programming industrial robotic systems because it provides robots with the "eyes" to interpret and interact with their environment. This technology enables robots to perform highly precise and adaptable tasks like quality inspection, object sorting, and assembly operations. By leveraging computer vision, robots can identify and locate objects, assess their orientation, and make real-time decisions, significantly enhancing their efficiency and accuracy in manufacturing processes.
 
-Traditional robotic systems often rely on pre-defined paths and operations, limiting their adaptability to changes in the production line. In contrast, robots equipped with computer vision can dynamically adjust their actions based on visual feedback, allowing them to handle a variety of tasks and adapt to new or unexpected situations. This capability is crucial for modern manufacturing environments that demand high levels of customization and rapid production changes. By integrating computer vision, industrial robots have become more versatile, capable, and essential for the future of automated manufacturing.
-In this section, we will review the fundamental concepts of computer vision that will help us add basic vision and detection features to our robot programming toolbox. This chapter will benefit from the well-known detection library OpenCV for its goal. The Dorna robotics also features simple tools, that let you use the OpenCV features more easily for your robotic application.
+Traditional robotic systems often rely on pre-defined paths and operations, limiting their adaptability to changes in the production line. In contrast, robots with computer vision can dynamically adjust their actions based on visual feedback, allowing them to handle various tasks and adapt to new or unexpected situations. This capability is crucial for modern manufacturing environments that demand high levels of customization and rapid production changes. By integrating computer vision, industrial robots have become more versatile, capable, and essential for the future of automated manufacturing.
+In this section, we will review the fundamental concepts of computer vision, which will help us add basic vision and detection features to our robot programming toolbox. This chapter will benefit from the well-known detection library OpenCV for its goal. Dorna robotics also features simple tools that let you use the OpenCV features more easily for your robotic application.
 
 
 
@@ -202,9 +202,9 @@ To detect Aruco patterns using the GUI options, head to the “Pattern detection
 
 |![](./images/fig10.jpg) | 
 |:--:| 
-| *Aruco detection in GUI and possible “Dictionary” values* |
+| *Aruco detection in GUI with * |
 
-You have to specify the matrix size (e.g. 4x4) and the maximum range of the IDs you want to be covered (e.g. 50). The list above shows the possible options in this dropdown. For example, the Aruco pattern that has been detected in the figure above is the distinct “id=17” pattern in the 4x4 dictionary. The output image will show you the coordinate frame that has been detected that attaches the marker, and the id value identified.
+You have to specify the matrix size (e.g. 4x4) and the maximum range of the IDs you want to be covered (e.g. 50). For example, the Aruco pattern that has been detected in the figure above is the distinct “id=17” pattern in the 4x4 dictionary.
 
 Use the “Marker length” value to specify the size of the pattern in mm. This is important for position detection since the algorithm uses the apparent size of the pattern to detect its position.
 Use the default values for the remaining options that will help you refine the detection. You are also free to test out the effect of other options in these refinements.
@@ -224,6 +224,13 @@ Draw or print the pattern below on a cardboard with each square being the same s
 You have created an Aruco dice! Use the GUI to detect the top side’s value of the dice. Roll around your dice and read the obtained values using the GUI.
 
 </div>
+
+#### **OCR**
+The final for the ```Detection Method``` is called OCR (Optical character recognition), which can be used to detect text characters or numbers. The use cases for this method may be to detect labels on objects. The detected text can be later extracted in the "cls" (class) property of the returned output. This will be explored later on in this course.
+|![](./images/fig27.jpg) | 
+|:--:| 
+| *OCR detection of a text string "STOP"** |
+
 
 ### **Setting**
 Now that the source and the algorithm are all selected. We introduce some useful general adjustments to the detection algorithm.
@@ -276,9 +283,9 @@ As you can see in the figure above, if you miss-place one of the three sample po
 
 #### **Output Format**
 The options given to you in this section are all about formatting the output results of the detection. 
-- Max detections per run: Limits the number of detection results the algorithm returns.
-- Shuffle return data: The algorithm randomly shuffles the list of the detected instances each time it gets executed.
-- Save the annotated image: Saving the annotated image may help for checking and debugging the detection algorithm later on when the algorithm is being used in the Python API.
+- Max detections per run: Limits the number of detection results the algorithm returns, the default value for this parameter is 1.
+- Shuffle return data: The algorithm randomly shuffles the list of the detected instances each time it gets executed (obviously works when Max detection parameter is larger than 1).
+- Save the annotated image: Saving the annotated image may be helpful for debugging the detection algorithm via the Python API. But it should be turned off by default because a lot of image files will occupy your system's memory. This method can also be used for collecting data for the machine learning tasks which you'll learn about shortly.
   
 <div style="border: 1px solid black; padding: 10px; background-color: #f0f0f0;">
 <h3 style="margin-top: 0;">Exercise</h3>
@@ -286,78 +293,46 @@ Describe a scenario where shuffling the detection output list may become helpful
 </div>
 
 
-### **GUI Output**
-The result panel of the GUI gives us two options:
-    • We can either extract the output values of the detection right away.
-    • Or we can export the configuration we just made using GUI to use easily in the Python API. Copy the configuration code to use it later.
+### **GUI Result**
+The GUI as mentioned before is a tool for setting up the detection algorithm in a way that suites your tasks. Our final goal would be to extract detection result from the algorithm and use it for robot-environement interaction tasks. In the result tab of the detection GUI you can find what is needed for this job.
 
 |![](./images/fig18.jpg) | 
 |:--:| 
 | *Sample result outputs* |
 
-The output data called “Return value”, is a list of dictionaries each one corresponding to one of the detection instances. For example in the figure above, the list only contains one dictionary, that’s because there where only one instance detected. The values in the dictionary are described below.
+The API call contains the python code needed to create and use the detection algorithm using the special setting you prepared using the GUI. The first line imports the detection module. The second line creates a ```prm``` variable that contains all your settings, e.g. the detection type, 2D and 3D limits, max detetction output count, etc... .
 
-- ```“id”```: The id of the detected instance. In the case of the Aruco detection, this equals the detected ID. In other detection methods, the “id” value just counts the different instances.
-- ```“center”```: A 2D vector, in the pixel units, on the screen coordinates, representing the position of the bounding box of the detected instance.
-- ```“corners”```: An array that holds the positions of the 4 corners of the bounding box.
-- ```“xyz”```: A 3D vector (in mm units) in the camera’s frame, that represents the position of the detected object but only by following the center pixel.
-- ```“tvec”```: The resulting translation vector from the 6D pose calculations using the 3 sample points, it’s similar to the “xyz” values but more accurate.
-- ```“rvec”```: The resulting rotation vector (in the axis-angle format discussed in Chapter 2) from the 6D pose calculations.
-
-### **Integrating GUI with the API**
-
-Now that the configurations of the detection application are done, we should try to integrate the detection app into a Python program. Here we will follow the steps in the example notebook present in the GitHub repository [“dorna_vision/example/detection_api”](https://github.com/dorna-robotics/dorna_vision/blob/main/example/detection_api.ipynb). This notebook helps you integrate the Dorna’s detection API from ground up. It starts by importing the necessary libraries.
+The next line uses the ```prm``` parametes to initiate a detection program, Which will be able to used later on to detect objects. 
 
 ```python
-import matplotlib.pyplot as plt
-from camera import Camera
-from dorna_vision import Detect
-import cv2
+detection = Detection(camera=camera, robot=robot, **prm)
 ```
 
-The ```matplotlib``` library is needed for drawing the resulting plots, the ```Camera``` library is used to easily get the camera input data, and the ```Detect``` module from the ```dorna_vision``` contains all the detection helper functions that we configured using GUI, and the ```cv2``` library brings us the OpenCV. Next up we should initialize the modules.
+By having access to the ```detection``` object you can execute the detection algorithm whenever needed like this:
 
 ```python
-config = { ... }
-
-# create the camera object and connect to it
-camera = Camera()
-camera.connect()
-
-# create the pattern detection object by passing the camera object
-d = Detect(camera)
+retval = detection.run()
 ```
 
-Paste the configuration output, you copied from the GUI as the ```config``` variable's value. Initialize the “Camera” and the “Detect” modules and pass the camera instance to the Detect module so that the ```Detect``` modules recognizes the camera’s output as the its detection input. Now we are ready for detection based on the given config setting.
+By running the code above, the algorithm captures the latest status of the source image feed, and runs the algorithm based on the special settings in ```prm``` and return the result in the ```retval```.
 
-```python
-# run pattern detection
-retval = d.pattern(config)
+It is important to know exactly the data format that is going to be returned by the ```detection.run()``` method. You can see the returning value of the algorithm on the current image feed in the field "Return Value" below the API call. The return value is a list that contains element each on corresponding to one of the detected instances paterns. By using ```if len(retval)>0 :``` You can check whether the algorithm has detected anything at all, And after that you can for example use ```retval[0]``` to access all the data of the first detected pattern in the list. The data for each deteceted instance is in a Python dictionary with many keys and value. Some important keys are listed below:
 
-# obtain the detected image
-img = d.img()
+- ```"cls"```: The class key usually describes what is the type of the detected object, for example its value could be ```"cnt"``` for contour, ```"poly"``` for polygon, and so on. In the case of the "OCR" detection, the value of this key will be the exact detected text. When using ML detection methods (introduced in the next chapter), you can define as many as classes as you wish, and the algorithm can detect multiple classes at once. For example you can train the algorithm to detect apples and watermelons in an image at the same time.
 
-# Display the image
-fig, ax = plt.subplots(frameon=False)
-ax.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-plt.show()
-```
+- ```"conf"```: This is the statistical confidence value, describing how sure the algorithm is detected of the pattern it has detected. This value has no use when using the OpenCV detection methods, but it will be a very important one, when using ML detection methods in the next chapter.
 
-Use the ```.pattern(config)``` method to perform the detection, and save the returned values in the ```retval``` variable. Next, we can capture the output image of the detector and plot it using the imported plotting library. The ```retval``` value follows the same format as the GUI's return output that we discussed earlier. You can program the robot based on these returning values.
+- ```"center"``` and ```"corners"```: Correspond to the geometrical position of the bounding box corners and its center. The value are in ```pxl``` unit, and the center of coordinate is the top-left corner of the input image.
 
-An important method in this API that we wish you to know is how to access the XYZ values by selecting the pixel coordinates of the point. This can be very helpful if you want to perform the detections more manually or use AI (explained in the next chapter). To do so, after initializing the program with the same steps as above, get access to the depth map of the camera using the code below.
+- ```"xyz"```: Is the position in the 3D space, corresponding to the center pixel of the detected pattern.
 
-```python
-depth_frame, _, _, _, _, color_img, depth_int, _, _= camera.get_all()
-```
+- ```"tvec"``` and ```"rvec"```: Are the translational (```xyz```) and rotational (```abc```) part of the 6D pose of the detected object, calculated based on the 6D pose algorithm that we explained before.
 
-Consider that you intend to find the XYZ values of the pixel at: ```(543px, 445px)```. The ```camera.xyz()``` method works like this:
 
-```python
-px, py = 543, 445
+### **Helper Function**
 
-xyz_target_2_cam, _ = camera.xyz((px, py), depth_frame, depth_int)
-```
+The helper function here "Pixel to XYZ" can be used to extract the 3D position of any of pixels on the screen. This function can be helpfull for geometrical purposes and works only for the camera with the depth map. 
+
 ---
 ## **Vision Coordination and Camera Calibration**
 After detecting objects by looking up their patterns in the image, the algorithm uses depth information from the detected pixels to determine the object's position in 3D space. However, the resulting 3D vectors are expressed in the camera's coordinate frame, and the algorithm often needs to transform these vectors into other frames of reference. Let’s briefly delve into how this transformation process works.
@@ -382,7 +357,7 @@ All the transformation steps in the hierarchy above, leading from the base frame
 
 We propose a simple method to calculate ```T_camera_2_J4```, effectively calibrating the camera. No direct measurements are required. Instead, the calibration algorithm uses images captured by the camera of a fixed Aruco marker from various angles. By analyzing these images, the algorithm computes the ```T_camera_2_J4``` matrix, completing the calibration process. This matrix can be used by the algorithm later on, to transform vectors from the camera frame to the robot's base frame.
 
-You can follow the instructions in ................................. to learn how the calibration is done.
+You can follow the instructions in [here](http://localhost:8888/edit/Documents/GitHub/education/Supplementary%2004%20-%20Camera%20Calibration) to perform the calibration process easily.
 
 
 ---
