@@ -10,7 +10,7 @@ As we explore this chapter further, we will explore detailed implementation step
 
 ---
 ## **How AI Works**
-AI vision, particularly through the use of deep learning, represents a significant advancement over classical pattern detection techniques. At its core, AI vision relies on artificial neural networks, specifically convolutional neural networks (CNNs), to learn and extract features from images. The process begins with feeding raw image data into the neural network, which consists of multiple layers, each designed to perform specific operations such as convolution, activation, pooling, and fully connected layers.
+AI vision, particularly through deep learning, represents a significant advancement over classical pattern detection techniques. At its core, AI vision relies on artificial neural networks, specifically convolutional neural networks (CNNs), to learn and extract features from images. The process begins with feeding raw image data into the neural network, which consists of multiple layers, each designed to perform specific operations such as convolution, activation, pooling, and fully connected layers.
 
 Training the network involves feeding it a large dataset of labeled images and using backpropagation to adjust the weights of the filters and neurons, minimizing the difference between the predicted and actual labels. This training process enables the network to learn hierarchical feature representations, starting from simple edges to more complex structures and ultimately to specific objects. Ready-to-use AI vision libraries come with pre-trained neural networks, enabling developers to quickly integrate object detection capabilities into their systems without the need for extensive training or dataset preparation.
 
@@ -135,7 +135,9 @@ Note: Google Colab, is a free cloud-based platform that allows users to write, e
 Using the Google Colab you can download the trained model to use it locally on any device. The file contains all the training information or weights. You can use the detection GUI introduced to you in the previous chapter to set up a detection program using your trained model. This is how it goes: 
 
 - When you are initializing the application, go under the "AI Model" tab, select your task (e.g. object detection), and give the application the address to your downloaded model weights.
- | ![](./images/fig15.jpg) | 
+
+ 
+| ![](./images/fig15.jpg) | 
 |:--:| 
 | *Initialization setting* |
 
@@ -155,9 +157,9 @@ Now you can use the detection application in the same way as in the previous cha
     
 In this exercise, we want to teach the robot to detect handwritten numbers.
 
-**Step 1**: Gather a dataset of at least 20 pictures, that contain handwritten numbers, in many different forms, from 0 to 9, large and small. Take the images using the method introduced to you in this chapter, with the help of the robot's camera and GUI's image-saving option.
+**Step 1**: Gather a dataset of at least 20 pictures, that contain handwritten numbers, in many different forms, from 0 to 9, but keep the size consistent and readable for the camera. Take the images using the method introduced to you in this chapter, with the help of the robot's camera and GUI's image-saving option.
 
-**Step 2**: Create a Roboflow project, upload the images, and annotate them (object detection method should suffice). Follow the instructions given to you in the supplementary chapter to train the model.
+**Step 2**: Create a Roboflow project, upload the images, and annotate them (object detection method). Follow the instructions given to you in the supplementary chapter to train the model.
 
 **Step 3**: Now prepare the GUI with the downloaded weights, and use new data images (that you haven't used in the training process) to test out the model's strength).
 
